@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.10.10 on win32)" generated="20230803 19:48:45.909" rpa="false" schemaversion="4">
+<suite id="s1" name="LoginBrowser" source="C:\Users\senthilkumar.k\PycharmProjects\pythonProject1\Test\LoginBrowser.robot">
+<test id="s1-t1" name="Log into the Salesforce Application" line="14">
+<kw name="Open my browser" library="LoginKeywords">
+<arg>${SiteURL}</arg>
+<arg>${Browser}</arg>
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${SiteURL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230803 19:48:46.070" level="INFO">Opening browser 'chrome' to base url 'https://westfield--sit.sandbox.my.salesforce.com/?login'.</msg>
+<msg timestamp="20230803 19:48:46.070" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230803 19:48:46.070" endtime="20230803 19:48:51.747"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230803 19:48:51.747" endtime="20230803 19:48:51.874"/>
+</kw>
+<status status="PASS" starttime="20230803 19:48:46.070" endtime="20230803 19:48:51.874"/>
+</kw>
+<kw name="Enter username" library="LoginKeywords">
+<arg>${user}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${txt_loginUserName}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230803 19:48:51.874" level="INFO">Typing text 'senthilkumar.k@tavant.com.wfprod.sit' into text field 'id:username'.</msg>
+<status status="PASS" starttime="20230803 19:48:51.874" endtime="20230803 19:48:52.002"/>
+</kw>
+<status status="PASS" starttime="20230803 19:48:51.874" endtime="20230803 19:48:52.010"/>
+</kw>
+<kw name="Enter password" library="LoginKeywords">
+<arg>${pwd}</arg>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${txt_loginPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230803 19:48:52.010" level="INFO">Typing text 'welcomewelcomewelcomewelcome2023' into text field 'id:password'.</msg>
+<status status="PASS" starttime="20230803 19:48:52.010" endtime="20230803 19:48:52.091"/>
+</kw>
+<status status="PASS" starttime="20230803 19:48:52.010" endtime="20230803 19:48:52.091"/>
+</kw>
+<kw name="Click signIn" library="LoginKeywords">
+<kw name="Click Button" library="Selenium2Library">
+<arg>${btn_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230803 19:48:52.091" level="INFO">Clicking button 'id:Login'.</msg>
+<status status="PASS" starttime="20230803 19:48:52.091" endtime="20230803 19:49:10.228"/>
+</kw>
+<status status="PASS" starttime="20230803 19:48:52.091" endtime="20230803 19:49:10.228"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230803 19:49:13.244" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230803 19:49:10.230" endtime="20230803 19:49:13.244"/>
+</kw>
+<kw name="Wait until element appears after login" library="LoginKeywords">
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${titleName}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230803 19:49:13.244" endtime="20230803 19:49:13.395"/>
+</kw>
+<status status="PASS" starttime="20230803 19:49:13.244" endtime="20230803 19:49:13.395"/>
+</kw>
+<kw name="Verify Successful Login" library="LoginKeywords">
+<kw name="Title Should Be" library="Selenium2Library">
+<arg>Home | Salesforce</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<msg timestamp="20230803 19:49:13.420" level="INFO">Page title is 'Home | Salesforce'.</msg>
+<status status="PASS" starttime="20230803 19:49:13.395" endtime="20230803 19:49:13.420"/>
+</kw>
+<status status="PASS" starttime="20230803 19:49:13.395" endtime="20230803 19:49:13.420"/>
+</kw>
+<kw name="Close my browsers" library="LoginKeywords">
+<kw name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230803 19:49:13.420" endtime="20230803 19:49:19.581"/>
+</kw>
+<status status="PASS" starttime="20230803 19:49:13.420" endtime="20230803 19:49:19.581"/>
+</kw>
+<status status="PASS" starttime="20230803 19:48:46.070" endtime="20230803 19:49:19.581"/>
+</test>
+<status status="PASS" starttime="20230803 19:48:45.909" endtime="20230803 19:49:19.581"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="LoginBrowser">LoginBrowser</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

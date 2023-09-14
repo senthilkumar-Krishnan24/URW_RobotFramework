@@ -1,0 +1,34 @@
+1693579547894	geckodriver	INFO	Listening on 127.0.0.1:63022
+1693579550966	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "63023" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SENTHI~1.K\\AppData\\Local\\Temp\\rust_mozprofileAanfTc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693579551331	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693579551413	Marionette	INFO	Listening on port 63030
+WebDriver BiDi listening on ws://127.0.0.1:63023
+Read port: 63030
+1693579551633	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:63023/devtools/browser/41933b5d-ec22-41ac-9cdf-cd7e01374c85
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+1693579565561	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js line 326 > eval, line 1: Script terminated by timeout at:
+estimateObjectSize@https://westfield--sit.sandbox.lightning.force.com/components/o11y/shared.js:1:4404
+collect@https://westfield--sit.sandbox.lightning.force.com/components/o11y/simple_collector.js:1:1429
+_multiplex@https://westfield--sit.sandbox.lightning.force.com/components/o11y/client.js:1:40270
+addLog@https://westfield--sit.sandbox.lightning.force.com/components/o11y/client.js:1:39969
+_logInternal@https://westfield--sit.sandbox.lightning.force.com/components/o11y/client.js:1:22574
+log/<@https://westfield--sit.sandbox.lightning.force.com/components/o11y/client.js:1:22296
+tryCatch@https://westfield--sit.sandbox.lightning.force.com/components/o11y/shared.js:1:7115
+log@https://westfield--sit.sandbox.lightning.force.com/components/o11y/client.js:1:22004
+navFromPage@https://westfield--sit.sandbox.lightning.force.com/components/instrumentation/o11ySupport.js:1:9436
+notify/<@https://westfield--sit.sandbox.lightning.force.com/components/instrumentation/utility.js:1:4271
+notify@https://westfield--sit.sandbox.lightning.force.com/components/instrumentation/utility.js:1:4258
+navFromPage@https://westfield--sit.sandbox.lightning.force.com/libraries/instrumentation/beaconLib.BeaconLibrary.js:20:404
+onWindowClose@https://westfield--sit.sandbox.lightning.force.com/libraries/instrumentation/beaconLib.BeaconLibrary.js:14:288
+b@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:984:72
+t@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:29:5726
+
+1693580613563	Marionette	INFO	Stopped listening on port 63030
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function

@@ -1,0 +1,15 @@
+1694674982379	geckodriver	INFO	Listening on 127.0.0.1:53443
+1694674985461	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "53444" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SENTHI~1.K\\AppData\\Local\\Temp\\rust_mozprofilepSJOrZ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1694674986256	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1694674986347	Marionette	INFO	Listening on port 53452
+WebDriver BiDi listening on ws://127.0.0.1:53444
+Read port: 53452
+1694674986622	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:53444/devtools/browser/f641450e-50bf-43a4-8a86-dbeb792b1e91
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+1694674998058	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.lightning.force.com."

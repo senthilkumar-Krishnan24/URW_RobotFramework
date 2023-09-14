@@ -1,0 +1,18 @@
+# Lead Page WebElements
+
+newButton = "xpath://a[@title='New']/self::a[@class='forceActionLink']"
+# lastNameInput = "xpath://input[@id='input-271']/self::input[@name='lastName']"
+# dbaNameInput = "xpath://input[@id='input-225']/self::input[@name='Company']"
+# phoneInput = "xpath://input[@id='input-233']/self::input[@name='Phone']"
+# mobileInput = "xpath://input[@id='input-235']/self::input[@name='MobilePhone']"
+# emailInput = "xpath://input[@id='input-242']/self::input[@name='Email']"
+lastNameInput = "xpath://input[@name='lastName']"
+dbaNameInput = "xpath://input[@name='Company']"
+phoneInput = "xpath://input[@name='Phone']"
+mobileInput = "xpath://input[@name='MobilePhone']"
+emailInput = "xpath://input[@name='Email']"
+salesBranchLevel1 = "xpath://button[@name='Sales_Branch_Level_1_WF__c']"
+sbL1PicklistValue = "xpath://span[@class='slds-truncate']/self::span[contains(text(),'Bags & Footwear & Accessories')]"
+salesBranchLevel3 = "xpath://button[@name='Sales_Branch_Level_3_WF__c']"
+sbL3PicklistValue = "xpath://span[@class='slds-truncate']/self::span[contains(text(),'Children footwear')]"
+saveButton = "xpath://button[contains(text(),'Save')]/self::button[@class='slds-button slds-button_brand']"

@@ -1,0 +1,19 @@
+1693465578890	geckodriver	INFO	Listening on 127.0.0.1:62392
+1693465581970	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62393" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SENTHI~1.K\\AppData\\Local\\Temp\\rust_mozprofile1j2PKZ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693465582789	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693465582887	Marionette	INFO	Listening on port 62403
+Read port: 62403
+WebDriver BiDi listening on ws://127.0.0.1:62393
+1693465582962	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62393/devtools/browser/8067901d-f1c8-4cf5-8414-4c19fb3d7ff7
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+1693465594011	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1693465605446	Marionette	INFO	Stopped listening on port 62403
+JavaScript warning: https://westfield--sit.sandbox.lightning.force.com/jslibrary/1693429566000/ui-analytics-reporting/EclairNG.js, line 72: Script terminated by timeout at:
+Pm/</k<@https://westfield--sit.sandbox.lightning.force.com/jslibrary/1693429566000/ui-analytics-reporting/EclairNG.js:72:338
+
+Dynamically enable window occlusion 1

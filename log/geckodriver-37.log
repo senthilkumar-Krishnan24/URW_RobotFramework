@@ -1,0 +1,52 @@
+1693666432474	geckodriver	INFO	Listening on 127.0.0.1:58465
+1693666435507	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58466" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SENTHI~1.K\\AppData\\Local\\Temp\\rust_mozprofileaBgIog"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693666435869	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693666435975	Marionette	INFO	Listening on port 58473
+WebDriver BiDi listening on ws://127.0.0.1:58466
+Read port: 58473
+1693666436202	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:58466/devtools/browser/6ee98132-016d-4d5e-a520-6ec3a39f539e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+1693666448789	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js, line 51: Script terminated by timeout at:
+get@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:15602
+get variant@https://westfield--sit.sandbox.lightning.force.com/components/lightning/baseCombobox.js:1:15235
+get@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:18136
+get isStandardOrLabelVariant@https://westfield--sit.sandbox.lightning.force.com/components/lightning/baseCombobox.js:1:17563
+get isUserInputDisabled@https://westfield--sit.sandbox.lightning.force.com/components/lightning/baseCombobox.js:1:17721
+tt@https://westfield--sit.sandbox.lightning.force.com/components/lightning/baseCombobox.js:1:3291
+xr/</<@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:36869
+observe@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:5527
+xr/<@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:35708
+fo@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:42119
+xr@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:35606
+Ir/t<@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:37706
+Ir@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:37717
+no@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:41057
+Bn/</<@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:24840
+Bn/<@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:24844
+Bn@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:24849
+lr@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:31131
+Vn@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:24100
+Bn/<@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:24461
+Bn@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:24491
+lr@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:31131
+Vn@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:24100
+Bn/<@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:24461
+Bn@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:24491
+lr@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:31131
+Vn@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:24100
+no/</<@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:40903
+fo@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:42119
+no/<@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:40872
+no@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:41054
+oo@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:41191
+qe@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:51:6059
+
+1693670692112	Marionette	INFO	Stopped listening on port 58473
+Dynamically enable window occlusion 1
+!!! error running onStopped callback: TypeError: callback is not a function

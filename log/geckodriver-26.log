@@ -1,0 +1,27 @@
+1693589573626	geckodriver	INFO	Listening on 127.0.0.1:61704
+1693589576648	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "61705" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SENTHI~1.K\\AppData\\Local\\Temp\\rust_mozprofilefiakMi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693589577023	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693589577106	Marionette	INFO	Listening on port 61712
+WebDriver BiDi listening on ws://127.0.0.1:61705
+Read port: 61712
+1693589577317	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:61705/devtools/browser/626f386f-8f47-4dbe-9158-c829c9ff9a51
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+console.error: (new TypeError("lazy.AsyncShutdown.profileBeforeChange is undefined", "resource://services-settings/Database.sys.mjs", 593))
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+1693589591186	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js, line 813: Script terminated by timeout at:
+W.prototype.Bx@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:813:306
+_getRegisteredDescriptors@https://westfield--sit.sandbox.lightning.force.com/libraries/instrumentation/beaconLib.BeaconLibrary.js:25:436
+logComponentDefUsage@https://westfield--sit.sandbox.lightning.force.com/libraries/instrumentation/beaconLib.BeaconLibrary.js:24:470
+onWindowClose@https://westfield--sit.sandbox.lightning.force.com/libraries/instrumentation/beaconLib.BeaconLibrary.js:14:315
+b@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:984:72
+t@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:29:5726
+
+1693590199336	Marionette	INFO	Stopped listening on port 61712
+Dynamically enable window occlusion 1

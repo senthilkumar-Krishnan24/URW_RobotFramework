@@ -1,0 +1,15 @@
+1693579390570	geckodriver	INFO	Listening on 127.0.0.1:62949
+1693579393644	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62950" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SENTHI~1.K\\AppData\\Local\\Temp\\rust_mozprofileIxWA9q"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693579394027	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693579394118	Marionette	INFO	Listening on port 62958
+WebDriver BiDi listening on ws://127.0.0.1:62950
+Read port: 62958
+1693579394400	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:62950/devtools/browser/062aa909-29ea-446c-8656-72c128efe815
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+1693579521131	Marionette	INFO	Stopped listening on port 62958
+Dynamically enable window occlusion 1

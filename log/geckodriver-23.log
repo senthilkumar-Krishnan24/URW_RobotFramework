@@ -1,0 +1,42 @@
+1693587335501	geckodriver	INFO	Listening on 127.0.0.1:59889
+1693587338543	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59890" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SENTHI~1.K\\AppData\\Local\\Temp\\rust_mozprofilewesLE0"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693587338905	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693587339000	Marionette	INFO	Listening on port 59909
+WebDriver BiDi listening on ws://127.0.0.1:59890
+Read port: 59909
+1693587339279	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59890/devtools/browser/b4537508-4b29-41e1-9ee2-28ccf139712e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+1693587354004	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+console.warn: LoginHelper(Main): "Couldn't parse specified uri [System Principal] with error NS_ERROR_MALFORMED_URI"
+console.warn: LoginHelper(Main): "Couldn't parse specified uri [System Principal] with error NS_ERROR_MALFORMED_URI"
+console.warn: LoginHelper(Main): "Couldn't parse specified uri [System Principal] with error NS_ERROR_MALFORMED_URI"
+console.warn: LoginHelper(Main): "Couldn't parse specified uri [System Principal] with error NS_ERROR_MALFORMED_URI"
+console.warn: LoginHelper(Main): "Couldn't parse specified uri [System Principal] with error NS_ERROR_MALFORMED_URI"
+console.warn: LoginHelper(Main): "Couldn't parse specified uri [System Principal] with error NS_ERROR_MALFORMED_URI"
+console.warn: LoginHelper(Main): "Couldn't parse specified uri [System Principal] with error NS_ERROR_MALFORMED_URI"
+console.warn: LoginHelper(Main): "Couldn't parse specified uri [System Principal] with error NS_ERROR_MALFORMED_URI"
+console.warn: LoginHelper(Main): "Couldn't parse specified uri [System Principal] with error NS_ERROR_MALFORMED_URI"
+console.warn: LoginHelper(Main): "Couldn't parse specified uri [System Principal] with error NS_ERROR_MALFORMED_URI"
+console.warn: LoginHelper(Main): "Couldn't parse specified uri [System Principal] with error NS_ERROR_MALFORMED_URI"
+console.warn: LoginHelper(Main): "Couldn't parse specified uri [System Principal] with error NS_ERROR_MALFORMED_URI"
+JavaScript warning: https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js, line 237: Script terminated by timeout at:
+F.encode@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:237:245
+C.Ur@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:747:206
+C.ws@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:748:166
+sendBeacon/<@https://westfield--sit.sandbox.lightning.force.com/libraries/instrumentation/beaconLib.BeaconLibrary.js:15:306
+initializeBeacon/this.preservedAuraCallback<@https://westfield--sit.sandbox.lightning.force.com/libraries/instrumentation/beaconLib.BeaconLibrary.js:3:255
+b@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:984:72
+sendBeacon@https://westfield--sit.sandbox.lightning.force.com/libraries/instrumentation/beaconLib.BeaconLibrary.js:14:454
+onWindowClose@https://westfield--sit.sandbox.lightning.force.com/libraries/instrumentation/beaconLib.BeaconLibrary.js:14:407
+b@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:984:72
+t@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:29:5726
+
+JavaScript error: resource://gre/modules/AsyncShutdown.sys.mjs, line 573: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1693587999122	Marionette	INFO	Stopped listening on port 59909
+Dynamically enable window occlusion 1

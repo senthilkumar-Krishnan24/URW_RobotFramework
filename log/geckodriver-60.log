@@ -1,0 +1,22 @@
+1693731270471	geckodriver	INFO	Listening on 127.0.0.1:59445
+1693731273512	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59446" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SENTHI~1.K\\AppData\\Local\\Temp\\rust_mozprofilea5kFWz"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1693731273858	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1693731273939	Marionette	INFO	Listening on port 59453
+WebDriver BiDi listening on ws://127.0.0.1:59446
+Read port: 59453
+1693731274152	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:59446/devtools/browser/23855c88-4115-4dad-a287-6606ede31f23
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://westfield--sit.sandbox.my.salesforce.com."
+1693731285139	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js line 326 > eval, line 25: Script terminated by timeout at:
+logComponentDefUsage@https://westfield--sit.sandbox.lightning.force.com/libraries/instrumentation/beaconLib.BeaconLibrary.js:25:39
+onWindowClose@https://westfield--sit.sandbox.lightning.force.com/libraries/instrumentation/beaconLib.BeaconLibrary.js:14:315
+b@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:984:72
+t@https://westfield--sit.sandbox.lightning.force.com/auraFW/javascript/WTJ4Z29FanVQWkdxVEdBN0hPM1lTQTVFM0ktN2RHblhYSndzXzhDR2k3U1EyNDYuMTMuMS0zLjAuMg/aura_prod.js:29:5726
+
+1693753877740	Marionette	INFO	Stopped listening on port 59453
+Dynamically enable window occlusion 1

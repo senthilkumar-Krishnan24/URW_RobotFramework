@@ -1,22 +1,15 @@
 *** Settings ***
 Library     Selenium2Library
+Library     String
 Resource    ../Resource/LoginKeywords.robot
 Resource    ../Resource/LeadCreationKeywords.robot
 
 
-*** Variables ***
-${Browser}      Firefox
-${SiteURL}      https://westfield--sit.sandbox.my.salesforce.com/?login
-${username}     senthilkumar.k@tavant.com.wfprod.sit
-${password}      welcomewelcomewelcomewelcome2023
-${lastName}     Senthilkumar
-${dbaName}      DBASenthil
-${phone}        3485734577
-${mobile}       439753754
-${email}        testemail34@gmail.com
-
 *** Test Cases ***
 Create_New_Account_and_Contact_from_Lead
+
+    # Create a new Lead
+
     Log into the Salesforce Application    ${SiteURL}    ${Browser}    ${username}    ${password}
     Set Browser Implicit Wait   4s
     ${ele}    Get WebElement    xpath=//*[contains(text(),'Leads')]/self::span[@class='slds-truncate']
@@ -29,7 +22,9 @@ Create_New_Account_and_Contact_from_Lead
     Sleep    5s
     Switch Window   title=New Lead | Salesforce
     Wait Until Element Is Visible   xpath=//input[@name='lastName']
-    Enter the Last Name    ${lastName}
+    Initialize Random Data Last Name
+    Enter the Last name     ${lastName}
+    Initialize Random Data DBA Name
     Enter the DBA Name    ${dbaName}
     Enter the phone number    ${phone}
     Enter the mobile number    ${mobile}
@@ -38,7 +33,21 @@ Create_New_Account_and_Contact_from_Lead
     Click the Sales Branch Level1
     Wait Until Element Is Visible   xpath=//button[@name='Sales_Branch_Level_3_WF__c']
     Click the Sales Branch Level3
+    Wait Until Element Is Visible   xpath=//input[@name='country']
+    Click on the Country Code
     Click on the Save button
+
+    #Convert the lead into account and contact
+    
+    Sleep   10s
+    Click on the DC Convert button
+    Switch Window   title=Convert - Duplicate Check for Salesforce | Salesforce
+    Select Frame    xpath=//iframe[@title='accessibility title']
+    Sleep   10s
+    Click on the Convert button
+
+
+
 
 
 

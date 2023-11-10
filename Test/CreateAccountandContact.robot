@@ -29,21 +29,35 @@ Create_New_Account_and_Contact_from_Lead
     Enter the phone number    ${phone}
     Enter the mobile number    ${mobile}
     Enter the email    ${email}
+
+    Scroll Element Into View    xpath=//button[@name='Sales_Branch_Level_1_WF__c']
     Wait Until Element Is Visible   xpath=//button[@name='Sales_Branch_Level_1_WF__c']
     Click the Sales Branch Level1
+    Scroll Element Into View    xpath=//button[@name='Sales_Branch_Level_3_WF__c']
     Wait Until Element Is Visible   xpath=//button[@name='Sales_Branch_Level_3_WF__c']
     Click the Sales Branch Level3
+
+    Scroll Element Into View    xpath=//input[@name='country']
+    Sleep   5s
     Wait Until Element Is Visible   xpath=//input[@name='country']
     Click on the Country Code
-    Click on the Save button
+    Enter the City    ${city}
+    Enter the PostalCode    ${postal}
+    Sleep   5s
+
+    #Click on the Save button
+    ${element}  Get WebElement    xpath=//button[contains(text(),'Save')]/self::button[@class='slds-button slds-button_brand']
+    Execute Javascript    arguments[0].click();     ARGUMENTS    ${element}
+
+
 
     #Convert the lead into account and contact
     
-    Sleep   10s
+    Sleep   5s
     Click on the DC Convert button
     Switch Window   title=Convert - Duplicate Check for Salesforce | Salesforce
     Select Frame    xpath=//iframe[@title='accessibility title']
-    Sleep   10s
+    Sleep   5s
     Click on the Convert button
 
 

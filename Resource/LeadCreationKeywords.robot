@@ -6,7 +6,7 @@ Variables   ../PageObject/LeadCreationObjects.py
 Variables   ../PageObject/LoginPageObjects.py
 
 *** Variables ***
-${Browser}      Firefox
+${Browser}      Chrome
 ${SiteURL}      https://westfield--sit.sandbox.my.salesforce.com/?login
 ${username}     senthilkumar.k@tavant.com.wfprod.sit
 ${password}      welcomewelcomewelcomewelcome2023
@@ -15,6 +15,8 @@ ${dbaName}      DBASenthil
 ${phone}        3485734577
 ${mobile}       439753754
 ${email}        testemail34@gmail.com
+${city}         Hosur
+${postal}       634332
 
 *** Keywords ***
 ## Create a new Lead
@@ -60,9 +62,17 @@ Click the Sales Branch Level3
 
 Click on the Country Code
     Click Element    ${countryCode}
-    Sleep    3s
+    Sleep    5s
 #    Select From List By Index    ${countryCodePicklist}     1
     Click Element    ${countryCodePicklist}
+
+Enter the City
+    [Arguments]     ${city}
+    Input Text     ${cityInput}    ${city}
+
+Enter the PostalCode
+    [Arguments]     ${postal}
+    Input Text     ${postalCodeInput}    ${postal}
 
 
 Click on the Save button
@@ -79,7 +89,7 @@ Click on the Mark as Complete Button
     
 Click on the DC Convert button
     Click Button    ${dcConvertButton}
-    Sleep   12s
+    Sleep   6s
 
 Click on the Convert button
     Click Button    ${convertButton}

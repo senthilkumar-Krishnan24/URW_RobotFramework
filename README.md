@@ -1,0 +1,3 @@
+# URW_RobotFramework
+
+This is an automation script for a Salesforce application. Tools which used for the automation are Robot Framework, Selenium2Library, Python...

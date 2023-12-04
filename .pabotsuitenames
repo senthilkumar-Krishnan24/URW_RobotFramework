@@ -1,0 +1,6 @@
+datasources:c084f666f83104f1085030a459c238c2e16be528
+commandlineoptions:65f95c924ba97541f47949701c4e3c51192a5b43
+suitesfrom:no-suites-from-option
+file:e837938314ca2b1b76e950c0c53b0ffe8fd67338
+--test Test.CreateAccountandContact.Create_New_Account_and_Contact_from_Lead
+--test Test.NewOpportunityCreation.Create_a_New_Agreement_type

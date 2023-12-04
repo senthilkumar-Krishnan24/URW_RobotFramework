@@ -1,0 +1,28 @@
+==============================================================================
+Test                                                                          
+==============================================================================
+Test.CreateAccountandContact                                                  
+==============================================================================
+Create_New_Account_and_Contact_from_Lead                                
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\Test\CreateAccountandContact.robot:10
+    T:  Create_New_Account_and_Contact_from_Lead    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\Test\CreateAccountandContact.robot:58
+      Click on the DC Convert button    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\Resource\LeadCreationKeywords.robot:88
+      Click Button    ${dcConvertButton}
+      |  ${dcConvertButton} = xpath://button[@class='slds-button slds-button_neutral']/self::button[contains(text(),'DC Convert')] (str)
+______________________________________________________________________________
+| FAIL |
+Button with locator 'xpath://button[@class='slds-button slds-button_neutral']/self::button[contains(text(),'DC Convert')]' not found.
+------------------------------------------------------------------------------
+Test.CreateAccountandContact                                          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Test                                                                  | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\pabot_results\0\output.xml

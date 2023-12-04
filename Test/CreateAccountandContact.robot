@@ -5,6 +5,7 @@ Resource    ../Resource/LoginKeywords.robot
 Resource    ../Resource/LeadCreationKeywords.robot
 
 
+
 *** Test Cases ***
 Create_New_Account_and_Contact_from_Lead
 
@@ -51,7 +52,7 @@ Create_New_Account_and_Contact_from_Lead
 
 
 
-    #Convert the lead into account and contact
+    #Convert the lead into an account and a contact
     
     Sleep   5s
     Click on the DC Convert button

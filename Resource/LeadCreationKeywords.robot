@@ -6,10 +6,7 @@ Variables   ../PageObject/LeadCreationObjects.py
 Variables   ../PageObject/LoginPageObjects.py
 
 *** Variables ***
-${Browser}      Chrome
-${SiteURL}      https://westfield--sit.sandbox.my.salesforce.com/?login
-${username}     senthilkumar.k@tavant.com.wfprod.sit
-${password}      welcomewelcomewelcomewelcome2023
+
 #${lastName}     Generate Random String 12 [LETTERS]
 ${dbaName}      DBASenthil
 ${phone}        3485734577

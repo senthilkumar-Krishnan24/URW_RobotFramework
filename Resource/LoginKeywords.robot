@@ -3,6 +3,13 @@ Library     Selenium2Library
 Library     PageObjectLibrary
 Variables   ../PageObject/LoginPageObjects.py
 
+*** Variables ***
+
+${Browser}      Chrome
+${SiteURL}      https://westfield--sit.sandbox.my.salesforce.com/?login
+${username}     senthilkumar.k@tavant.com.wfprod.sit
+${password}      welcomewelcomewelcomewelcome2023
+
 *** Keywords ***
 Log into the Salesforce Application
     [Arguments]     ${SiteURL}      ${Browser}      ${username}     ${password}

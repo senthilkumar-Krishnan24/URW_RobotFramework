@@ -4,3 +4,15 @@ on:
   pull_request:
     branches:
       - main
+
+jobs:
+  test:
+    name: 'Run unit tests'
+    runs-on:   window-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 'Run Tests'
+        run: npm run test
+        
+      
+      

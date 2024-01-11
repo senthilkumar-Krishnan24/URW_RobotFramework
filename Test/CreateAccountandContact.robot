@@ -4,13 +4,10 @@ Library     String
 Resource    ../Resource/LoginKeywords.robot
 Resource    ../Resource/LeadCreationKeywords.robot
 
-
-
 *** Test Cases ***
 Create_New_Account_and_Contact_from_Lead
 
     # Create a new Lead
-
     Log into the Salesforce Application    ${SiteURL}    ${Browser}    ${username}    ${password}
     Set Browser Implicit Wait   4s
     ${ele}    Get WebElement    xpath=//*[contains(text(),'Leads')]/self::span[@class='slds-truncate']
@@ -30,14 +27,12 @@ Create_New_Account_and_Contact_from_Lead
     Enter the phone number    ${phone}
     Enter the mobile number    ${mobile}
     Enter the email    ${email}
-
     Scroll Element Into View    xpath=//button[@name='Sales_Branch_Level_1_WF__c']
     Wait Until Element Is Visible   xpath=//button[@name='Sales_Branch_Level_1_WF__c']
     Click the Sales Branch Level1
     Scroll Element Into View    xpath=//button[@name='Sales_Branch_Level_3_WF__c']
     Wait Until Element Is Visible   xpath=//button[@name='Sales_Branch_Level_3_WF__c']
     Click the Sales Branch Level3
-
     Scroll Element Into View    xpath=//input[@name='country']
     Sleep   5s
     Wait Until Element Is Visible   xpath=//input[@name='country']
@@ -50,15 +45,11 @@ Create_New_Account_and_Contact_from_Lead
     ${element}  Get WebElement    xpath=//button[contains(text(),'Save')]/self::button[@class='slds-button slds-button_brand']
     Execute Javascript    arguments[0].click();     ARGUMENTS    ${element}
 
-
-
     #Convert the lead into an account and a contact
-    
-    Sleep   5s
     Click on the DC Convert button
     Switch Window   title=Convert - Duplicate Check for Salesforce | Salesforce
-    Select Frame    xpath=//iframe[@title='accessibility title']
-    Sleep   5s
+    Sleep    5s
+    Select Frame    xpath=//iframe[@title='Convert - Duplicate Check for Salesforce']
     Click on the Convert button
 
 

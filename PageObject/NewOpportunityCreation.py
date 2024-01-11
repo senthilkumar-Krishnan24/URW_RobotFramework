@@ -1,4 +1,4 @@
-# New Opportunity Creation
+# New Opportunity Creation - Page objects
 
 accountNavigationLink = "xpath://span[contains(text(),'Accounts')]/self::span[@class='slds-truncate']"
 accountListViewDropDownIcon = "xpath://span[@part='boundary']/ancestor::button[@title='Select a List View: Accounts']"
@@ -21,13 +21,7 @@ spaceDelieveryInput = "xpath://input[@id='input-15']"
 newRCDdate = "xpath://input[@id='input-18']"
 expirationDate = "xpath://input[@id='input-21']"
 saveButton = "xpath://button[@class='slds-button slds-button_brand save-btn btn primary-btn']"
-
-
-
-
-
-
-
-
-#//p[contains(text(),'Next')]
-#//p[contains(text(),'Next')]/ancestor::button[@class='slds-button slds-button--neutral slds-button slds-button_neutral next-button uiButton--default uiButton']
+markStageAsCompleteButton = "xpath://span[text()='Mark Stage as Complete']"
+editOpportunityButton = "xpath://button[text()='Edit Opportunity']"
+inputProjectedSales = "xpath://section[@id='GI_whoSection']/descendant::input[@name='projectedSales']"
+saveAsDraftButton = "xpath://button[text()='Save As Draft']"

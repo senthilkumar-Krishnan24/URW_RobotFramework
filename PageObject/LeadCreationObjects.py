@@ -19,5 +19,7 @@ dcConvertButton = "xpath://button[@class='slds-button slds-button_neutral']/self
 countryCode = "xpath://input[@name='country']"
 countryCodePicklist = "xpath://span[@class='slds-truncate']/self::span[contains(text(),'Afghanistan')]"
 footer = "xpath://div[@class='entityPanel slds-box_border expand slds-p-bottom_small']/following::footer[@class='slds-modal__footer']"
-convertButton = "xpath://button[@class='slds-button slds-button_brand']/self::button[@title='Convert']"
+convertButton = "xpath://section[@class='slds-modal slds-fade-in-open']/descendant::button[@title='Convert']"
 cancelButton = "xpath://button[@title='Cancel']/self::button[@class='slds-button slds-button_neutral']"
+# iframe = "xpath://div[@class='windowViewMode-normal oneContent active lafPageHost']/descendant::iframe[@name='vfFrameId_1704875469950']"
+# iframe1 = "xpath://div[@class='iframe-parent slds-template_iframe slds-card']/descendant::iframe[@name='vfFrameId_1704875469950']"

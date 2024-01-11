@@ -3,12 +3,26 @@ Test
 ==============================================================================
 Test.NewOpportunityCreation                                                   
 ==============================================================================
-Create_a_New_Agreement_type                                           | PASS |
+Create_a_New_Agreement_type                                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\Test\NewOpportunityCreation.robot:9
+    T:  Create_a_New_Agreement_type    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\Test\NewOpportunityCreation.robot:15
+      Click on the All Account drop down option    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\Resource\NewOpportunityCreationKeywords.robot:31
+      Wait Until Element Is Visible    ${allAccountListOption}    20s
+      |  ${allAccountListOption} = xpath://span[contains(text(),'All Accounts')]/self::span[@class=' virtualAutocompleteOptionText'] (str)
+______________________________________________________________________________
+| FAIL |
+Element 'xpath://span[contains(text(),'All Accounts')]/self::span[@class=' virtualAutocompleteOptionText']' not visible after 20 seconds.
 ------------------------------------------------------------------------------
-Test.NewOpportunityCreation                                           | PASS |
-1 test, 1 passed, 0 failed
+Test.NewOpportunityCreation                                           | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
-Test                                                                  | PASS |
-1 test, 1 passed, 0 failed
+Test                                                                  | FAIL |
+1 test, 0 passed, 1 failed
 ==============================================================================
 Output:  C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\pabot_results\1\output.xml

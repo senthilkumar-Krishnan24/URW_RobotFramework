@@ -14,6 +14,7 @@ ${centerName}   Century City
 ${SpaceDelivery}        12/1/2023
 ${newRCD}       12/3/2023
 ${expiration}       12/2/2028
+${projectedSales}       20000
 
 *** Keywords ***
 # Create a New Agreement type
@@ -35,7 +36,7 @@ Select the account to create a new agreement deal
     Click Link    ${accountName}
 
 Click on the Related Tab
-    Sleep   10s
+    Sleep   5s
     Wait Until Element Is Visible    ${relatedTab}  20s
     Click Element   ${relatedTab}
 
@@ -44,23 +45,23 @@ Click on the New Opportunity type button
     Click Element   ${newOpportunityButton}
 
 Click on the Next button
-    Sleep   10s
+    Sleep   5s
     Select Frame        ${iframeXpath}
     Wait Until Element Is Visible    ${nextButton}  20s
     Click Button    ${nextButton}
 
 Fill the New deal fields at the offer stage
-    Sleep   5s
+    Sleep   3s
     [Arguments]     ${centerName}
     Input Text      ${centerNameInput}      ${centerName}
-    Sleep    5s
+    Sleep    3s
     Click Element   ${centerNameOption}
     Click Button    ${useType}
     Click Element    ${useTypeListOption}
     Click Element    ${unitOrNewUnit}
-    Sleep    5s
+    Sleep    3s
     Select Radio Button    others    01t1L00000J3CWUQA3
-    Wait Until Element Is Visible    ${saveAndExitButton}  10s
+    Wait Until Element Is Visible    ${saveAndExitButton}  5s
     Click Button    ${saveAndExitButton}
 
 Enter the space delivery date
@@ -78,13 +79,38 @@ Enter the expiration date
     [Arguments]     ${expiration}
     Input Text    ${expirationDate}    ${expiration}
 
+Enter the Projected Sales field on the deal sheet
+    Sleep   5s
+    Select Frame        ${iframeXpath}
+    Sleep    5s
+    Scroll Element Into View    ${inputProjectedSales}
+    [Arguments]     ${projectedSales}
+    Input Text    ${inputProjectedSales}    ${projectedSales}
+
+
 Edit the Opportunity at the Proposal stage
     Enter the space delivery date    ${SpaceDelivery}
     Enter the RCD date    ${newRCD}
     Set Browser Implicit Wait   5s
     Enter the expiration date    ${expiration}
     Click Button    ${saveButton}
-    Set Browser Implicit Wait   5s
+
+    # Clicking on the Mark Stage As Complete button
+    Sleep   10s
+    Wait Until Element Is Visible    ${markStageAsCompleteButton}   20s
+    ${MarkStageAsComplete}    Get WebElement    xpath=//span[text()='Mark Stage as Complete']
+    Execute Javascript    arguments[0].click();     ARGUMENTS    ${MarkStageAsComplete}
+
+    # Clicking on the Edit Oppotunity Button
+    Sleep    10s
+    Wait Until Element Is Visible    ${editOpportunityButton}   20s
+    ${EditOpportunity}    Get WebElement    xpath=//button[text()='Edit Opportunity']
+    Execute Javascript    arguments[0].click();     ARGUMENTS    ${EditOpportunity}
+
+    # User entering a value in the Projected sales field
+    Enter the Projected Sales field on the deal sheet    ${projectedSales}
+    Wait Until Element Is Visible    ${saveAsDraftButton}   20s
+    Click Button    ${saveAsDraftButton}
 
 
 

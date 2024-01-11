@@ -6,18 +6,14 @@ Test.CreateAccountandContact
 Create_New_Account_and_Contact_from_Lead                                
   Traceback (most recent call last):
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\Test\CreateAccountandContact.robot:10
+    File  C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\Test\CreateAccountandContact.robot:8
     T:  Create_New_Account_and_Contact_from_Lead    
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\Test\CreateAccountandContact.robot:58
-      Click on the DC Convert button    
-    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    File  C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\Resource\LeadCreationKeywords.robot:88
-      Click Button    ${dcConvertButton}
-      |  ${dcConvertButton} = xpath://button[@class='slds-button slds-button_neutral']/self::button[contains(text(),'DC Convert')] (str)
+    File  C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\Test\CreateAccountandContact.robot:51
+      Select Frame    xpath=//iframe[@title='accessibility title']
 ______________________________________________________________________________
 | FAIL |
-Button with locator 'xpath://button[@class='slds-button slds-button_neutral']/self::button[contains(text(),'DC Convert')]' not found.
+Element with locator 'xpath=//iframe[@title='accessibility title']' not found.
 ------------------------------------------------------------------------------
 Test.CreateAccountandContact                                          | FAIL |
 1 test, 0 passed, 1 failed

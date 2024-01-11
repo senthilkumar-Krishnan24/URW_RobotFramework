@@ -6,7 +6,6 @@ Variables   ../PageObject/LeadCreationObjects.py
 Variables   ../PageObject/LoginPageObjects.py
 
 *** Variables ***
-
 #${lastName}     Generate Random String 12 [LETTERS]
 ${dbaName}      DBASenthil
 ${phone}        3485734577
@@ -60,7 +59,6 @@ Click the Sales Branch Level3
 Click on the Country Code
     Click Element    ${countryCode}
     Sleep    5s
-#    Select From List By Index    ${countryCodePicklist}     1
     Click Element    ${countryCodePicklist}
 
 Enter the City
@@ -85,10 +83,14 @@ Click on the Mark as Complete Button
     Click Button    ${markAsCompleteButton}
     
 Click on the DC Convert button
+    Sleep   5s
+    Wait Until Element Is Visible    ${dcConvertButton}     20s
     Click Button    ${dcConvertButton}
-    Sleep   6s
+    Sleep   10s
 
 Click on the Convert button
+    Sleep   5s
+    Wait Until Element Is Visible    ${convertButton}     10s
     Click Button    ${convertButton}
     
 Click on the Cancel button

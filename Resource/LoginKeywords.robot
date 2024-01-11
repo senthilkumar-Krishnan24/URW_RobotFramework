@@ -8,7 +8,7 @@ Variables   ../PageObject/LoginPageObjects.py
 ${Browser}      Chrome
 ${SiteURL}      https://westfield--sit.sandbox.my.salesforce.com/?login
 ${username}     senthilkumar.k@tavant.com.wfprod.sit
-${password}      welcomewelcomewelcomewelcome2023
+${password}     welcomewelcomewelcomewelcome2024
 
 *** Keywords ***
 Log into the Salesforce Application

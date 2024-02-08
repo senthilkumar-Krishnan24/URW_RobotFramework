@@ -5,16 +5,60 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="-1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="Robot Framework 6.1 (Python 3.10.10 on win32)" name="Generator">
+<meta content="Robot Framework 7.0 (Python 3.10.10 on win32)" name="Generator">
 <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKcAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAAqAAAAAAAAAAAAAAAAAAAALIAAAD/AAAA4AAAANwAAADcAAAA3AAAANwAAADcAAAA3AAAANwAAADcAAAA4AAAAP8AAACxAAAAAAAAAKYAAAD/AAAAuwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC/AAAA/wAAAKkAAAD6AAAAzAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN8AAAD/AAAA+gAAAMMAAAAAAAAAAgAAAGsAAABrAAAAawAAAGsAAABrAAAAawAAAGsAAABrAAAADAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAIsAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAANEAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAAAAAAAAMgAAADIAAAAyAAAAMgAAADIAAAAyAAAAMgAAADIAAAAFAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAADwAAAB8AAAAAAAAAGAAAABcAAAAAAAAAH8AAABKAAAAAAAAAAAAAAAAAAAA2gAAAP8AAAD6AAAAwwAAAAAAAADCAAAA/wAAACkAAADqAAAA4QAAAAAAAAD7AAAA/wAAALAAAAAGAAAAAAAAANoAAAD/AAAA+gAAAMMAAAAAAAAAIwAAAP4AAAD/AAAA/wAAAGAAAAAAAAAAAAAAAMkAAAD/AAAAigAAAAAAAADaAAAA/wAAAPoAAADDAAAAAAAAAAAAAAAIAAAAcAAAABkAAAAAAAAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAA2gAAAP8AAAD7AAAAywAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAN4AAAD/AAAAqwAAAP8AAACvAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALIAAAD/AAAAsgAAAAAAAAC5AAAA/wAAAMoAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMkAAAD/AAAAvAAAAAAAAAAAAAAAAAAAAKwAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAArQAAAAAAAAAAwAMAAIABAAAf+AAAP/wAAD/8AAAgBAAAP/wAAD/8AAA//AAAJIwAADHEAAA//AAAP/wAAB/4AACAAQAAwAMAAA==">
-<style media="all" type="text/css">
+<style media="all">
+:root {
+    --text-color: black;
+    --background-color: white;
+    --primary-color: #ddd;
+    --secondary-color: #ccc;
+    --link-color: #15c;
+    --link-hover-color: #61c;
+    --highlight-color: #eee;
+    --target-color: #f9f9f9;
+    --pass-color: #97bd61;
+    --fail-color: #ce3e01;
+    --warn-color: #fed84f;
+    --pass-link-color: #098a09;
+    --warn-link-color: #927201;
+    --fail-link-color: #ce3e01;
+    --ascending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
+    --descending-icon: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+    }
+}
+[data-theme="dark"] {
+    --text-color: #e2e1d7;
+    --background-color: #1c2227;
+    --primary-color: #26373b;
+    --secondary-color: #424f5a;
+    --link-color: #8cc4ff;
+    --link-hover-color: #bb86fc;
+    --highlight-color: #002b36;
+    --target-color: #1a252e;
+    --pass-link-color: #97bd61;
+    --warn-link-color: #fed84f;
+    --fail-link-color: #ff9b8f;
+    --ascending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAAfn5+////f/cqYgAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
+    --descending-icon: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAJAgMAAACZCj6+AAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAlQTFRFAAAA////fn5+K6jOaAAAAAN0Uk5TAP//RFDWIQAAACdJREFUeJxjYHBgYGAMYGBgDWFgEA1lAAOtVQwMXCsYGJgWADkNDAA78QP9oKr7vwAAAABJRU5ErkJggg==);
+}
 /* Generic and misc styles */
 body {
     font-family: Helvetica, sans-serif;
     font-size: 0.8em;
-    color: black;
+    color: black; /* Fallback value */
+    color: var(--text-color);
     padding: 6px;
-    background: white;
+    background: white; /* Fallback value */
+    background: var(--background-color);
+    margin-left: 15px;
+}
+body[theme-toggled] {
+    transition: background 0.3s, background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 table {
     table-layout: fixed;
@@ -29,20 +73,37 @@ br {
     mso-data-placement: same-cell; /* maintain line breaks in Excel */
 }
 hr {
-    background: #ccc;
+    background: #ccc; /* Fallback value */
+    background: var(--secondary-color);
     height: 1px;
     border: 0;
 }
 a, a:link, a:visited {
     text-decoration: none;
-    color: #15c;
+    color: #15c; /* Fallback value */
+    color: var(--link-color);
 }
 a > img {
-    border: 1px solid #15c !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    border-color: #15c !important; /* Fallback value */
+    border-color: var(--link-color) !important;
 }
 a:hover, a:active {
     text-decoration: underline;
-    color: #61c;
+    color: #61c; /* Fallback value */
+    color: var(--link-hover-color);
+}
+select {
+    background-color: white; /* Fallback value */
+    background-color: var(--background-color);
+    color: black; /* Fallback value */
+    color: var(--text-color);
+    border-width: 2px;
+    border-style: solid;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
+    border-radius: 4px;
 }
 .parent-name {
     font-size: 0.7em;
@@ -55,7 +116,7 @@ a:hover, a:active {
 #header {
     width: 65em;
     height: 3em;
-    margin: 6px 0;
+    margin: 20px 0 6px 0;
 }
 h1 {
     float: left;
@@ -83,14 +144,17 @@ h2 {
 }
 /* Status text colors -- !important allows using them in links */
 .fail {
-    color: #ce3e01 !important;
+    color: #ce3e01 !important; /* Fallback value */
+    color: var(--fail-link-color) !important;
     font-weight: bold;
 }
 .pass {
-    color: #098a09 !important;
+    color: #098a09 !important; /* Fallback value */
+    color: var(--pass-link-color) !important;
 }
 .skip {
-    color: #927201 !important;
+    color: #927201 !important; /* Fallback value */
+    color: var(--warn-link-color) !important;
     font-weight: bold;
 }
 .label {
@@ -98,8 +162,10 @@ h2 {
     font-size: 0.75em;
     letter-spacing: 1px;
     white-space: nowrap;
-    color: black;
-    background-color: #ddd;
+    color: black; /* Fallback value */
+    color: var(--text-color);
+    background-color: #ddd; /* Fallback value */
+    background-color: var(--primary-color);
     border-radius: 3px;
 }
 .label.debug, .label.trace, .label.error, .label.keyword {
@@ -109,15 +175,18 @@ h2 {
     font-weight: bold;
 }
 .label.pass {
-    background-color: #97bd61;
+    background-color: #97bd61; /* Fallback value */
+    background-color: var(--pass-color);
     color: #000 !important;
 }
 .label.fail, .label.error {
-    background-color: #ce3e01;
+    background-color: #ce3e01; /* Fallback value */
+    background-color: var(--fail-color);
     color: #fff !important;
 }
 .label.skip, .label.warn {
-    background-color: #fed84f;
+    background-color: #fed84f; /* Fallback value */
+    background-color: var(--warn-color);
     color: #000 !important;
 }
 /* Top right header */
@@ -146,7 +215,8 @@ h2 {
     padding: 0.3em 0;
     font-size: 0.9em;
     border-bottom-left-radius: 4px;
-    background: #ddd;
+    background: #ddd; /* Fallback value */
+    background: var(--primary-color);
 }
 /* Statistics table */
 .statistics {
@@ -156,15 +226,20 @@ h2 {
     margin-bottom: 1em;
 }
 .statistics tr:hover {
-    background: #f4f4f4;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
     cursor: pointer;
 }
 .statistics th, .statistics td {
-    border: 1px solid #ccc;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
     padding: 0.1em 0.3em;
 }
 .statistics th {
-    background-color: #ddd;
+    background-color: #ddd; /* Fallback value */
+    background-color: var(--primary-color);
     padding: 0.2em 0.3em;
 }
 .statistics td {
@@ -200,27 +275,33 @@ th.stats-col-graph:hover {
 }
 /* Statistics graph */
 .graph, .empty-graph {
-    border: 1px solid #ccc;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
     width: auto;
     height: 7px;
     padding: 0;
-    background: #aaa;
 }
 .empty-graph {
-    background: #eee;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
 }
 .pass-bar, .fail-bar, .skip-bar {
     float: left;
     height: 100%;
 }
 .fail-bar {
-    background: #ce3e01;
+    background: #ce3e01; /* Fallback value */
+    background: var(--fail-color);
 }
 .pass-bar {
-    background: #97bd61;
+    background: #97bd61; /* Fallback value */
+    background: var(--pass-color);
 }
 .skip-bar {
-    background: #fed84f;
+    background: #fed84f; /* Fallback value */
+    background: var(--warn-color);
 }
 /* Tablesorter - adapted from provided Blue Skin */
 .tablesorter-header {
@@ -230,30 +311,84 @@ th.stats-col-graph:hover {
     cursor: pointer;
 }
 .tablesorter-header:hover {
-    background-color: #ccc;
+    background-color: #ccc; /* Fallback value */
+    background-color: var(--secondary-color);
 }
 .tablesorter-headerAsc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==);
-    background-color: #ccc !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlBWnFr3cnIr0WQOyBmvzp13CpxQAOw==); /* Fallback value */
+    background-image: var(--ascending-icon);
+    background-color: #ccc !important; /* Fallback value */
+    background-color: var(--secondary-color) !important;
 }
 .tablesorter-headerDesc {
-    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==);
-    background-color: #ccc !important;
+    background-image: url(data:image/gif;base64,R0lGODlhCwAJAKEAAAAAAH9/fwAAAAAAACH5BAEAAAIALAAAAAALAAkAAAIUlAWnBr3cnIr0WROyDmvzp13CpxQAOw==); /* Fallback value */
+    background-image: var(--descending-icon);
+    background-color: #ccc !important; /* Fallback value */
+    background-color: var(--secondary-color) !important;
 }
 .sorter-false {
     background-image: none;
     cursor: default;
 }
 .sorter-false:hover {
-    background-color: #ddd;
+    background-color: #ddd; /* Fallback value */
+    background-color: var(--primary-color);
+}
+#theme-toggle {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 28px;
+    height: 28px;
+    border: none;
+    padding: 4px;
+    z-index: 1000;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: var(--highlight-color);
+}
+[data-theme="dark"] .dark-mode-icon,
+[data-theme="light"] .light-mode-icon {
+    display: none;
+}
+[data-theme="dark"] .light-mode-icon,
+[data-theme="light"] .dark-mode-icon {
+    display: block;
+}
+@keyframes highlight {
+    0% {
+        background: var(--primary-color)
+    }
+    100% {
+        background: var(--target-color);
+    }
+}
+:target {
+    background: var(--target-color);
+    transition: background 0.3s;
+    animation: highlight 4s;
 }
 </style>
-<style media="all" type="text/css">
+<style media="all">
 /* Icons are from Open Iconic <https://useiconic.com/open/>.
    Licensed under the MIT License. */
+:root {
+    --icon-filter: invert(0);
+    --icon-highlight: var(--secondary-color);
+    --elapsed-color: #666;
+}
+/* @media (prefers-color-scheme: dark) { */
+[data-theme="dark"] {
+    --icon-filter: invert(1);
+    --icon-highlight: #a39990;
+    --elapsed-color: #999;
+}
 /* Containers */
 .suite, .test, #errors {
-    border: 1px solid #ccc;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
+    border-width: 1px;
+    border-style: solid;
     padding: 0.3em 0.2em;
     margin: 0.2em 0;
 }
@@ -282,8 +417,10 @@ th.stats-col-graph:hover {
 }
 .element-header:hover {
     cursor: pointer;
-    background-color: #eee;
-    border-color: #ccc;
+    background-color: #eee; /* Fallback value */
+    background-color: var(--highlight-color);
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
 }
 .element-header-toggle {
     position: absolute;
@@ -293,10 +430,14 @@ th.stats-col-graph:hover {
     background-position: center;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAQAAABKxSfDAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfeCR0JChSkZz20AAAAGklEQVQI12NgQAKMDKzInP8IDhOqMk4G7AAANQwBE427PYUAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0wIDB2Mmg4di0yaC04eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAzKSIgLz4KPC9zdmc+), none;
+    filter: var(--icon-filter);
     height: 10px;
     width: 10px;
     background-size: 6px 6px;
-    border: 1px solid #ccc;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--icon-highlight);
+    border-width: 1px;
+    border-style: solid;
     border-radius: 2px;
 }
 .closed > .element-header-toggle {
@@ -304,7 +445,8 @@ th.stats-col-graph:hover {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0zIDB2M2gtM3YyaDN2M2gydi0zaDN2LTJoLTN2LTNoLTJ6IiAvPgo8L3N2Zz4=), none;
 }
 .element-header:hover > .element-header-toggle {
-    background-color: #ccc;
+    background-color: #ccc; /* Fallback value */
+    background-color: var(--icon-highlight);
 }
 .element-header-right:hover ~ .element-header-toggle {
     background-color: transparent;
@@ -324,23 +466,31 @@ th.stats-col-graph:hover {
 }
 .name {
     font-weight: bold;
+    white-space: pre-wrap;
+}
+.arg, .assign {
+    white-space: pre-wrap;
 }
 .elapsed {
     float: right;
-    color: #666;
+    color: #666; /* Fallback value */
+    color: var(--elapsed-color);
     padding-left: 1em;
 }
 .link {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAHlJREFUGJVtzrEJwmAQBtCn6ASuIKTIBhY2gmghBiJYB1udwk10B8FJbKMBcQFbtbkfJHrVwfu+4/idJR64Y9H7E3higj5O3S8Y44ApLnjhnXCNGhV2yNGggDJwiC02gavUbpDFvscRo4QdXOMKDHBufz3HLYKzNn4AbSkV3fncGQYAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik01Ljg4LjAzYy0uMTguMDEtLjM2LjAzLS41My4wOS0uMjcuMS0uNTMuMjUtLjc1LjQ3YS41LjUgMCAxIDAgLjY5LjY5Yy4xMS0uMTEuMjQtLjE3LjM4LS4yMi4zNS0uMTIuNzgtLjA3IDEuMDYuMjIuMzkuMzkuMzkgMS4wNCAwIDEuNDRsLTEuNSAxLjVjLS40NC40NC0uOC40OC0xLjA2LjQ3LS4yNi0uMDEtLjQxLS4xMy0uNDEtLjEzYS41LjUgMCAxIDAtLjUuODhzLjM0LjIyLjg0LjI1Yy41LjAzIDEuMi0uMTYgMS44MS0uNzhsMS41LTEuNWMuNzgtLjc4Ljc4LTIuMDQgMC0yLjgxLS4yOC0uMjgtLjYxLS40NS0uOTctLjUzLS4xOC0uMDQtLjM4LS4wNC0uNTYtLjAzem0tMiAyLjMxYy0uNS0uMDItMS4xOS4xNS0xLjc4Ljc1bC0xLjUgMS41Yy0uNzguNzgtLjc4IDIuMDQgMCAyLjgxLjU2LjU2IDEuMzYuNzIgMi4wNi40Ny4yNy0uMS41My0uMjUuNzUtLjQ3YS41LjUgMCAxIDAtLjY5LS42OWMtLjExLjExLS4yNC4xNy0uMzguMjItLjM1LjEyLS43OC4wNy0xLjA2LS4yMi0uMzktLjM5LS4zOS0xLjA0IDAtMS40NGwxLjUtMS41Yy40LS40Ljc1LS40NSAxLjAzLS40NC4yOC4wMS40Ny4wOS40Ny4wOWEuNS41IDAgMSAwIC40NC0uODhzLS4zNC0uMi0uODQtLjIyeiIKICAvPgo8L3N2Zz4=), none;
+    filter: var(--icon-filter);
 }
 .expand {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAADtJREFUGJVjYCACKDAwMByA0ljFDjAwMPxnYGB4ABVQgLL/Q+VQBB6gseGmIivCkERXhFUSWRFOSawAAEl7E3uv1iMcAAAAAElFTkSuQmCC);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0xLjUgMGwtMS41IDEuNSA0IDQgNC00LTEuNS0xLjUtMi41IDIuNS0yLjUtMi41eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAxKSIgLz4KPC9zdmc+), none;
+    filter: var(--icon-filter);
 }
 .collapse {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAAC5JREFUGJVjYCARNEAxTsn/UIyhCFkSQxG6ThQ+C5IpjWhG1yNb4YDFTdjEMAEACi8Q++9Y9TAAAAAASUVORK5CYII=);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik00IDBsLTQgNCAxLjUgMS41IDIuNS0yLjUgMi41IDIuNSAxLjUtMS41LTQtNHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgMSkiIC8+Cjwvc3ZnPg==), none;
+    filter: var(--icon-filter);
 }
 .expand, .collapse, .link {
     float: left;
@@ -352,7 +502,10 @@ th.stats-col-graph:hover {
     background-size: 8px 8px;
     background-repeat: no-repeat;
     background-position: center;
-    border: 1px solid #ccc;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--icon-highlight);
+    border-width: 1px;
+    border-style: solid;
     border-radius: 2px;
 }
 .link {
@@ -362,7 +515,8 @@ th.stats-col-graph:hover {
     visibility: visible;
 }
 .expand:hover, .collapse:hover, .link:hover {
-    background-color: #ccc;
+    background-color: #ccc; /* Fallback value */
+    background-color: var(--icon-highlight);
 }
 /* Messages and errors */
 .messages .time, .messages .message {
@@ -403,11 +557,16 @@ th.stats-col-graph:hover {
 .message-row:hover .select-message div {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAAmJLR0QA/4ePzL8AAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfeCR0MOzhWKZQOAAAASUlEQVQY032PsRHAIAwDX9BkicD+W8UMEqegAQJWKZ/+3sLZJhFGQEZzNaIa4ibh66En867VNaIeoP5WppNuIGoAlOm3g5VC1AdYeQv1BZPRSgAAAABJRU5ErkJggg==);
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjgiIHZpZXdCb3g9IjAgMCA4IDgiPgogIDxwYXRoIGQ9Ik0wIDB2MWg4di0xaC04em0wIDJ2MWg2di0xaC02em0wIDJ2MWg4di0xaC04em0wIDJ2MWg2di0xaC02eiIgLz4KPC9zdmc+), none;
-    border: 1px solid #ccc;
+    filter: var(--icon-filter);
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--icon-highlight);
+    border-width: 1px;
+    border-style: solid;
     border-radius: 2px;
 }
 .select-message:hover div {
-    background-color: #ccc;
+    background-color: #ccc; /* Fallback value */
+    background-color: var(--icon-highlight);
     cursor: pointer;
 }
 /* Message tables - these MUST NOT be combined together because otherwise
@@ -439,7 +598,7 @@ th.stats-col-graph:hover {
     cursor: default;
 }
 </style>
-<style media="print" type="text/css">
+<style media="print">
 body {
     background: white !important;
     padding: 0;
@@ -479,7 +638,7 @@ a:link, a:visited {
     background: #ddd !important;
 }
 </style>
-<style media="all" type="text/css">
+<style media="all">
 #javascript-disabled {
     width: 600px;
     margin: 100px auto 0 auto;
@@ -502,7 +661,7 @@ a:link, a:visited {
     font-style: italic;
 }
 </style>
-<style media="all" type="text/css">
+<style media="all">
 .doc > * {
     margin: 0.7em 1em 0.1em 1em;
     padding: 0;
@@ -514,14 +673,12 @@ a:link, a:visited {
     margin-top: 0.1em;
 }
 .doc table {
-    border: 1px solid #ccc;
     background: transparent;
     border-collapse: collapse;
     empty-cells: show;
     font-size: 0.9em;
 }
 .doc table th, .doc table td {
-    border: 1px solid #ccc;
     background: transparent;
     padding: 0.1em 0.3em;
     height: 1.2em;
@@ -531,24 +688,32 @@ a:link, a:visited {
     letter-spacing: 0.1em;
 }
 .doc pre {
+    border-radius: 2px;
     font-size: 1.1em;
     letter-spacing: 0.05em;
-    background: #f4f4f4;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
 }
 .doc code {
+    border-radius: 2px;
     padding: 0 0.2em;
     letter-spacing: 0.05em;
-    background: #eee;
+    background: #eee; /* Fallback value */
+    background: var(--highlight-color);
 }
 .doc li {
     list-style-position: inside;
     list-style-type: square;
 }
-.doc img {
-    border: 1px solid #ccc;
+.doc img, .doc table, .doc table th, .doc table td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc; /* Fallback value */
+    border-color: var(--secondary-color);
 }
 .doc hr {
-    background: #ccc;
+    background: #ccc; /* Fallback value */
+    background: var(--secondary-color);
     height: 1px;
     border: 0;
 }
@@ -850,7 +1015,6 @@ window.model = (function () {
         suite.populateSuites = createIterablePopulator('Suite');
         suite.childrenNames = ['keyword', 'suite', 'test'];
         suite.callWhenChildrenReady = function (callable) { callable(); };
-        suite.message = data.message;
         suite.children = function () {
             return suite.keywords().concat(suite.tests()).concat(suite.suites());
         };
@@ -941,6 +1105,7 @@ window.model = (function () {
             name: data.name,
             doc: data.doc,
             status: data.status,
+            message: data.message,
             times: data.times,
             id: data.parent ? data.parent.id + '-' + data.id : data.id
         };
@@ -961,7 +1126,6 @@ window.model = (function () {
                 return test.keywords();
         };
         test.tags = data.tags;
-        test.message = data.message;
         test.matchesTagPattern = function (pattern) {
             return containsTagPattern(test.tags, pattern);
         };
@@ -972,13 +1136,12 @@ window.model = (function () {
     }
     function Keyword(data) {
         var kw = createModelObject(data);
-        var flatTypes = ['RETURN', 'BREAK', 'CONTINUE'];
         kw.libname = data.libname;
         kw.fullName = (kw.libname ? kw.libname + '.' : '') + kw.name;
         kw.type = data.type;
         kw.template = 'keywordTemplate';
         kw.arguments = data.args;
-        kw.assign = data.assign + (data.assign ? ' =' : '');
+        kw.assign = data.assign + (data.assign ? ' =  ' : '');
         kw.tags = data.tags;
         kw.timeout = data.timeout;
         kw.populateKeywords = createIterablePopulator('Keyword');
@@ -1357,8 +1520,9 @@ window.testdata = function () {
     var _statistics = null;
     var LEVELS = ['TRACE', 'DEBUG', 'INFO', 'WARN', 'ERROR', 'FAIL', 'SKIP'];
     var STATUSES = ['FAIL', 'PASS', 'SKIP', 'NOT RUN'];
-    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF', 'ELSE IF', 'ELSE', 'RETURN',
-                         'TRY', 'EXCEPT', 'FINALLY', 'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
+    var KEYWORD_TYPES = ['KEYWORD', 'SETUP', 'TEARDOWN', 'FOR', 'ITERATION', 'IF',
+                         'ELSE IF', 'ELSE', 'RETURN', 'VAR', 'TRY', 'EXCEPT', 'FINALLY',
+                         'WHILE', 'CONTINUE', 'BREAK', 'ERROR'];
     function addElement(elem) {
         if (!elem.id)
             elem.id = uniqueId();
@@ -1401,6 +1565,7 @@ window.testdata = function () {
         return createKeyword(parent, element, strings, index - messages.length);
     }
     function createKeyword(parent, element, strings, index) {
+        var status = element[8];
         var kw = model.Keyword({
             parent: parent,
             type: KEYWORD_TYPES[element[0]],
@@ -1416,7 +1581,12 @@ window.testdata = function () {
                 this.doc = function () { return doc; };
                 return doc;
             },
-            status: parseStatus(element[8], strings),
+            status: parseStatus(status),
+            message: function () {
+                var msg = status.length == 4 ? strings.get(status[3]) : '';
+                this.message = function () { return msg; };
+                return msg;
+            },
             times: model.Times(times(element[8])),
             isChildrenLoaded: typeof(element[9]) !== 'number'
         });
@@ -1627,6 +1797,20 @@ window.testdata = function () {
 }();
 </script>
 <script type="text/javascript">
+const lightModeIcon = `
+<svg class="light-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
+    viewBox="0 0 24 24" fill="var(--text-color)">
+    <rect fill="none" height="24" width="24" />
+    <path
+        d="M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0 c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2 c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1 C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06 c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41 l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41 c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36 c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z" />
+</svg>`
+const darkModeIcon = `
+<svg class="dark-mode-icon" xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24"
+    viewBox="0 0 24 24" fill="var(--text-color)">
+    <rect fill="none" height="24" width="24" />
+    <path
+        d="M11.01,3.05C6.51,3.54,3,7.36,3,12c0,4.97,4.03,9,9,9c4.63,0,8.45-3.5,8.95-8c0.09-0.79-0.78-1.42-1.54-0.95 c-0.84,0.54-1.84,0.85-2.91,0.85c-2.98,0-5.4-2.42-5.4-5.4c0-1.06,0.31-2.06,0.84-2.89C12.39,3.94,11.9,2.98,11.01,3.05z" />
+</svg>`
 function removeJavaScriptDisabledWarning() {
     // Not using jQuery here for maximum speed
     document.getElementById('javascript-disabled').style.display = 'none';
@@ -1662,6 +1846,10 @@ function setTitle(suiteName, type) {
 function addHeader() {
     var generated = util.timestamp(window.output.generated);
     $.tmpl('<h1>${title}</h1>' +
+           '<button id=theme-toggle>' +
+             lightModeIcon +
+             darkModeIcon +
+           '</button>' +
            '<div id="generated">' +
              '<span>Generated<br>${generated}</span><br>' +
              '<span id="generated-ago">${ago} ago</span>' +
@@ -1673,6 +1861,7 @@ function addHeader() {
         ago: util.createGeneratedAgoString(generated),
         title: document.title
     }).appendTo($('#header'));
+    document.getElementById('theme-toggle')?.addEventListener('click', theme.onClick);
 }
 function addReportOrLogLink(myType) {
     var url;
@@ -1801,40 +1990,126 @@ function stopPropagation(event) {
     if (event.stopPropagation)
         event.stopPropagation();
 }
+const theme = function () {
+    const storageKey = 'theme-preference';
+    const urlParams = new URLSearchParams(window.location.search);
+    var storage;
+    var theme;
+    function init(givenStorage) {
+        storage = givenStorage;
+        theme = { value: getPreference() };
+        document.body.setAttribute('data-theme', theme.value);
+        reflectPreference();
+        window.matchMedia('(prefers-color-scheme: dark)')
+            .addEventListener('change', ({matches:isDark}) => {
+                theme.value = isDark ? 'dark' : 'light';
+                setPreference();
+            });
+        window.addEventListener('storage', ({key, newValue}) => {
+            if (key === storage.fullKey(storageKey)) {
+                theme.value = newValue === 'dark' ? 'dark' : 'light';
+                setPreference();
+            }
+        });
+    }
+    function getPreference() {
+        if (urlParams.has('theme')) {
+            var urlTheme = urlParams.get('theme') === 'dark' ? 'dark' : 'light';
+            storage.set(storageKey, urlTheme);
+            urlParams.delete('theme');
+            return urlTheme;
+        }
+        if (storage.get(storageKey))
+            return storage.get(storageKey) === 'dark' ? 'dark' : 'light';
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    function setPreference() {
+        storage.set(storageKey, theme.value);
+        reflectPreference();
+    }
+    function reflectPreference() {
+        document.body.setAttribute('data-theme', theme.value);
+        document.querySelector('#theme-toggle')?.setAttribute('aria-label', theme.value);
+        const event = new Event('theme-change', {value: theme.value});
+        document.dispatchEvent(event);
+    }
+    function onClick() {
+        theme.value = theme.value === 'light' ? 'dark' : 'light';
+        document.body.setAttribute('theme-toggled', "");
+        setPreference();
+    }
+    return {init: init, getPreference: getPreference, setPreference: setPreference,
+        reflectPreference: reflectPreference, onClick: onClick};
+}();
+</script>
+<script type="text/javascript">
+storage = function () {
+    var prefix = 'robot-framework-';
+    var storage;
+    function init(user) {
+        if (user)
+            prefix += user + '-';
+        storage = getStorage();
+    }
+    function getStorage() {
+        // Use localStorage if it's accessible, normal object otherwise.
+        // Inspired by https://stackoverflow.com/questions/11214404
+        try {
+            localStorage.setItem(prefix, prefix);
+            localStorage.removeItem(prefix);
+            return localStorage;
+        } catch (exception) {
+            return {};
+        }
+    }
+    function get(key, defaultValue) {
+        var value = storage[fullKey(key)];
+        if (typeof value === 'undefined')
+            return defaultValue;
+        return value;
+    }
+    function set(key, value) {
+        storage[fullKey(key)] = value;
+    }
+    function fullKey(key) {
+        return prefix + key;
+    }
+    return {init: init, get: get, set: set, fullKey: fullKey};
+}();
 </script>
 <script type="text/javascript">
 window.output = {};
 </script>
 <script type="text/javascript">
-window.output["suite"] = [1,2,3,0,[],[1,0,77935],[],[[4,0,0,[],[1,225,77708],[[0,5,6,0,0,7,0,0,[1,225,18269],[[0,8,9,0,10,11,0,0,[1,225,5135],[[225,2,12]]],[0,13,9,0,14,0,0,0,[1,5360,128],[]],[0,15,16,0,17,18,0,0,[1,5488,2010],[[7497,2,19]]],[0,20,9,0,21,22,0,0,[1,7498,156],[[7499,2,23]]],[0,20,9,0,21,24,0,0,[1,7654,100],[[7654,2,25]]],[0,26,9,0,27,28,0,0,[1,7754,10737],[[7754,2,29]]]]],[0,30,9,0,31,32,0,0,[1,18494,4],[]],[0,33,9,0,34,35,36,0,[1,18498,150],[[18648,2,37]]],[0,38,9,0,39,40,0,0,[1,18651,158],[[18654,2,41]]],[0,30,9,0,31,32,0,0,[1,18809,10],[]],[0,42,9,0,43,44,0,0,[1,18819,5027],[]],[0,33,9,0,34,44,45,0,[1,23851,18],[[23869,2,46]]],[0,38,9,0,39,47,0,0,[1,23869,17],[[23869,2,48]]],[0,49,9,0,31,50,0,0,[1,23887,0],[]],[0,15,16,0,17,51,0,0,[1,23887,5008],[[28895,2,52]]],[0,53,9,0,54,55,0,0,[1,28895,40],[]],[0,42,9,0,43,56,0,0,[1,28935,47],[]],[0,57,58,0,0,0,0,0,[1,28984,0],[[0,59,60,0,61,62,63,0,[1,28984,0],[[28984,2,64]]],[0,65,16,0,66,63,0,0,[1,28984,0],[[28984,2,64]]]]],[0,67,58,0,0,63,0,0,[1,28984,338],[[0,20,9,0,21,68,0,0,[1,28984,338],[[28990,2,69]]]]],[0,70,58,0,0,0,0,0,[1,29322,8],[[0,59,60,0,61,62,71,0,[1,29322,0],[[29322,2,72]]],[0,65,16,0,66,71,0,0,[1,29322,8],[[29322,2,72]]]]],[0,73,58,0,0,71,0,0,[1,29330,245],[[0,20,9,0,21,74,0,0,[1,29330,245],[[29330,2,75]]]]],[0,76,58,0,0,77,0,0,[1,29575,210],[[0,20,9,0,21,78,0,0,[1,29575,210],[[29575,2,79]]]]],[0,80,58,0,0,81,0,0,[1,29785,387],[[0,20,9,0,21,82,0,0,[1,29785,387],[[29793,2,83]]]]],[0,84,58,0,0,85,0,0,[1,30173,319],[[0,20,9,0,21,86,0,0,[1,30176,316],[[30176,2,87]]]]],[0,88,9,0,89,90,0,0,[1,30492,309],[]],[0,42,9,0,43,90,0,0,[1,30801,37],[]],[0,91,58,0,0,0,0,0,[1,30838,272],[[0,26,9,0,27,92,0,0,[1,30838,155],[[30838,2,93]]],[0,94,9,0,95,96,0,0,[1,30993,117],[[30995,2,97]]]]],[0,88,9,0,89,98,0,0,[1,31110,314],[]],[0,42,9,0,43,98,0,0,[1,31424,32],[]],[0,99,58,0,0,0,0,0,[1,31456,225],[[0,26,9,0,27,100,0,0,[1,31456,130],[[31465,2,101]]],[0,94,9,0,95,102,0,0,[1,31586,95],[[31587,2,103]]]]],[0,88,9,0,89,104,0,0,[1,31681,324],[]],[0,15,16,0,17,51,0,0,[1,32005,5012],[[37017,2,52]]],[0,42,9,0,43,104,0,0,[1,37017,33],[]],[0,105,58,0,0,0,0,0,[1,37050,5275],[[0,94,9,0,95,106,0,0,[1,37050,140],[[37050,2,107]]],[0,15,16,0,17,51,0,0,[1,37190,5007],[[42197,2,52]]],[0,94,9,0,95,108,0,0,[1,42197,122],[[42197,2,109]]]]],[0,110,58,0,0,111,0,0,[1,42325,186],[[0,20,9,0,21,112,0,0,[1,42325,186],[[42325,2,113]]]]],[0,114,58,0,0,115,0,0,[1,42511,232],[[0,20,9,0,21,116,0,0,[1,42511,232],[[42511,2,117]]]]],[0,15,16,0,17,51,0,0,[1,42743,5014],[[47757,2,52]]],[0,33,9,0,34,118,119,0,[1,47757,16],[[47773,2,120]]],[0,38,9,0,39,121,0,0,[1,47788,36],[[47790,2,122]]],[0,123,58,0,0,0,0,0,[1,47824,19695],[[0,15,16,0,17,51,0,0,[1,47824,5007],[[52831,2,52]]],[0,42,9,0,43,124,0,0,[1,52831,4548],[]],[0,26,9,0,27,125,0,0,[1,57379,129],[[57380,2,126]]],[0,15,16,0,17,127,0,0,[1,57510,10008],[[67518,2,128]]]]],[0,53,9,0,54,129,0,0,[1,67519,96],[]],[0,15,16,0,17,51,0,0,[1,67615,5010],[[72624,2,52]]],[0,130,9,0,131,132,0,0,[1,72625,47],[[72625,2,133]]],[0,134,58,0,0,0,0,0,[1,72672,5261],[[0,15,16,0,17,51,0,0,[1,72672,5012],[[77684,2,52]]],[0,42,9,0,43,135,0,0,[1,77684,42],[]],[0,26,9,0,27,136,0,0,[1,77726,205],[[77726,2,137]]]]]]]],[],[1,1,0,0]];
+window.output["suite"] = [1,0,0,2,[],[1,0,107300],[[3,4,5,0,[],[1,549,86936],[],[[6,0,0,[],[1,779,86706],[[0,7,8,0,0,9,0,0,[1,780,24471],[[0,10,11,0,12,13,0,0,[1,781,4805],[[781,2,14]]],[0,15,11,0,16,0,0,0,[1,5587,133],[]],[0,17,18,0,19,20,0,0,[1,5720,2007],[[7728,2,21]]],[0,22,11,0,23,24,0,0,[1,7728,93],[[7729,2,25]]],[0,22,11,0,23,26,0,0,[1,7820,69],[[7821,2,27]]],[0,28,11,0,29,30,0,0,[1,7889,17362],[[7890,2,31]]]]],[0,32,11,0,33,34,0,0,[1,25251,15],[]],[0,35,11,0,36,37,38,0,[1,25266,18],[[25284,2,39]]],[0,40,11,0,41,42,0,0,[1,25284,33],[[25284,2,43]]],[0,32,11,0,33,34,0,0,[1,25316,0],[]],[0,44,11,0,45,46,0,0,[1,25316,3948],[]],[0,35,11,0,36,46,47,0,[1,29265,22],[[29287,2,48]]],[0,40,11,0,41,49,0,0,[1,29287,16],[[29287,2,50]]],[0,51,11,0,33,52,0,0,[1,29303,0],[]],[0,17,18,0,19,53,0,0,[1,29303,5010],[[34313,2,54]]],[0,55,11,0,56,57,0,0,[1,34313,30],[]],[0,44,11,0,45,58,0,0,[1,34343,36],[]],[0,59,60,0,0,0,0,0,[1,34379,0],[[0,61,62,0,63,64,65,0,[1,34379,0],[[34379,2,66]]],[0,67,18,0,68,65,0,0,[1,34379,0],[[34379,2,66]]]]],[0,69,60,0,0,65,0,0,[1,34379,551],[[0,22,11,0,23,70,0,0,[1,34379,551],[[34379,2,71]]]]],[0,72,60,0,0,0,0,0,[1,34930,2],[[0,61,62,0,63,64,73,0,[1,34931,1],[[34932,2,74]]],[0,67,18,0,68,73,0,0,[1,34932,0],[[34932,2,74]]]]],[0,75,60,0,0,73,0,0,[1,34932,432],[[0,22,11,0,23,76,0,0,[1,34932,432],[[34932,2,77]]]]],[0,78,60,0,0,79,0,0,[1,35365,249],[[0,22,11,0,23,80,0,0,[1,35365,249],[[35365,2,81]]]]],[0,82,60,0,0,83,0,0,[1,35614,233],[[0,22,11,0,23,84,0,0,[1,35614,233],[[35614,2,85]]]]],[0,86,60,0,0,87,0,0,[1,35847,427],[[0,22,11,0,23,88,0,0,[1,35847,426],[[35847,2,89]]]]],[0,90,11,0,91,92,0,0,[1,36274,408],[]],[0,44,11,0,45,92,0,0,[1,36682,31],[]],[0,93,60,0,0,0,0,0,[1,36713,232],[[0,28,11,0,29,94,0,0,[1,36714,119],[[36714,2,95]]],[0,96,11,0,97,98,0,0,[1,36846,97],[[36847,2,99]]]]],[0,90,11,0,91,100,0,0,[1,36945,296],[]],[0,44,11,0,45,100,0,0,[1,37241,32],[]],[0,101,60,0,0,0,0,0,[1,37273,237],[[0,28,11,0,29,102,0,0,[1,37273,136],[[37288,2,103]]],[0,96,11,0,97,104,0,0,[1,37413,97],[[37414,2,105]]]]],[0,90,11,0,91,106,0,0,[1,37510,289],[]],[0,17,18,0,19,53,0,0,[1,37799,5014],[[42813,2,54]]],[0,44,11,0,45,106,0,0,[1,42814,16],[]],[0,107,60,0,0,0,0,0,[1,42830,5377],[[0,96,11,0,97,108,0,0,[1,42830,144],[[42846,2,109]]],[0,17,18,0,19,53,0,0,[1,42974,5028],[[48003,2,54]]],[0,96,11,0,97,110,0,0,[1,48003,204],[[48003,2,111]]]]],[0,112,60,0,0,113,0,0,[1,48207,285],[[0,22,11,0,23,114,0,0,[1,48207,285],[[48207,2,115]]]]],[0,116,60,0,0,117,0,0,[1,48491,251],[[0,22,11,0,23,118,0,0,[1,48491,251],[[48491,2,119]]]]],[0,17,18,0,19,53,0,0,[1,48743,5002],[[53745,2,54]]],[0,35,11,0,36,120,121,0,[1,53745,31],[[53776,2,122]]],[0,40,11,0,41,123,0,0,[1,53776,47],[[53776,2,124]]],[0,125,60,0,0,0,0,0,[1,53823,23435],[[0,17,18,0,19,53,0,0,[1,53823,5008],[[58831,2,54]]],[0,44,11,0,45,126,0,0,[1,58831,8235],[]],[0,28,11,0,29,127,0,0,[1,67066,185],[[67066,2,128]]],[0,17,18,0,19,129,0,0,[1,67251,10007],[[77258,2,130]]]]],[0,55,11,0,56,131,0,0,[1,77259,52],[]],[0,17,18,0,19,53,0,0,[1,77311,5005],[[82316,2,54]]],[0,132,11,0,133,134,0,0,[1,82316,26],[[82317,2,135]]],[0,136,60,0,0,0,0,0,[1,82343,5142],[[0,17,18,0,19,53,0,0,[1,82343,5008],[[87350,2,54]]],[0,44,11,0,45,137,0,0,[1,87350,29],[]],[0,28,11,0,29,138,0,0,[1,87379,105],[[87380,2,139]]]]]]]],[],[1,1,0,0]],[140,141,142,0,[],[1,560,104324],[],[[143,0,0,[],[1,781,104103],[[0,7,8,0,0,9,0,0,[1,782,20403],[[0,10,11,0,12,13,0,0,[1,783,4593],[[783,2,14]]],[0,15,11,0,16,0,0,0,[1,5376,129],[]],[0,17,18,0,19,20,0,0,[1,5504,2005],[[7509,2,21]]],[0,22,11,0,23,24,0,0,[1,7509,139],[[7510,2,25]]],[0,22,11,0,23,26,0,0,[1,7649,91],[[7650,2,27]]],[0,28,11,0,29,30,0,0,[1,7741,13444],[[7742,2,31]]]]],[0,32,11,0,33,53,0,0,[1,21185,0],[]],[0,17,18,0,19,53,0,0,[1,21185,5001],[[26186,2,54]]],[0,144,145,0,0,0,0,0,[1,26186,47],[[0,35,11,0,36,146,147,0,[1,26186,16],[[26202,2,148]]],[0,40,11,0,41,149,0,0,[1,26202,16],[[26202,2,150]]]]],[0,151,145,0,0,0,0,0,[1,26233,2090],[[0,44,11,0,45,152,0,0,[1,26233,1902],[]],[0,96,11,0,97,153,0,0,[1,28135,188],[[28135,2,154]]]]],[0,155,145,0,0,0,0,0,[1,28323,2117],[[0,44,11,0,45,156,0,0,[1,28323,1865],[]],[0,96,11,0,97,157,0,0,[1,30188,252],[[30188,2,158]]]]],[0,159,145,0,0,0,0,0,[1,30440,3123],[[0,17,18,0,19,160,0,0,[1,30440,3004],[[33445,2,161]]],[0,162,11,0,163,164,0,0,[1,33445,118],[[33445,2,165]]]]],[0,166,145,0,0,0,0,0,[1,33564,5375],[[0,17,18,0,19,53,0,0,[1,33565,5016],[[38582,2,54]]],[0,44,11,0,45,167,0,0,[1,38582,122],[]],[0,96,11,0,97,168,0,0,[1,38703,236],[[38703,2,169]]]]],[0,170,145,0,0,0,0,0,[1,38939,3203],[[0,17,18,0,19,160,0,0,[1,38940,3005],[[41945,2,161]]],[0,96,11,0,97,171,0,0,[1,41945,198],[[41945,2,172]]]]],[0,173,145,0,0,0,0,0,[1,42143,12674],[[0,17,18,0,19,53,0,0,[1,42143,5008],[[47151,2,54]]],[0,132,11,0,133,174,0,0,[1,47151,160],[[47151,2,175]]],[0,44,11,0,45,176,0,0,[1,47311,7242],[]],[0,28,11,0,29,177,0,0,[1,54554,263],[[54554,2,178]]]]],[0,179,145,0,0,180,0,0,[1,54817,9933],[[0,17,18,0,19,160,0,0,[1,54825,3012],[[57837,2,161]]],[0,22,11,0,23,181,0,0,[1,57837,159],[[57837,2,182]]],[0,17,18,0,19,160,0,0,[1,57996,3015],[[61011,2,161]]],[0,96,11,0,97,183,0,0,[1,61011,178],[[61011,2,184]]],[0,28,11,0,29,185,0,0,[1,61189,85],[[61190,2,186]]],[0,96,11,0,97,187,0,0,[1,61274,86],[[61275,2,188]]],[0,96,11,0,97,189,0,0,[1,61361,96],[[61361,2,190]]],[0,17,18,0,19,160,0,0,[1,61458,3013],[[64471,2,161]]],[0,191,11,0,192,193,0,0,[1,64471,112],[[64471,2,194]]],[0,44,11,0,45,195,0,0,[1,64583,35],[]],[0,28,11,0,29,196,0,0,[1,64618,130],[[64618,2,197]]]]],[0,198,145,0,0,0,0,0,[1,64749,40134],[[0,199,145,0,0,200,0,0,[1,64750,3114],[[0,17,18,0,19,160,0,0,[1,64751,3005],[[67756,2,161]]],[0,22,11,0,23,201,0,0,[1,67756,108],[[67756,2,202]]]]],[0,203,145,0,0,204,0,0,[1,67864,99],[[0,32,11,0,33,160,0,0,[1,67865,2],[]],[0,22,11,0,23,205,0,0,[1,67867,95],[[67867,2,206]]]]],[0,32,11,0,33,53,0,0,[1,67963,2],[]],[0,207,145,0,0,208,0,0,[1,67965,83],[[0,32,11,0,33,160,0,0,[1,67967,0],[]],[0,22,11,0,23,209,0,0,[1,67967,81],[[67967,2,210]]]]],[0,28,11,0,29,211,0,0,[1,68048,152],[[68048,2,212]]],[0,17,18,0,19,129,0,0,[1,68200,10004],[[78204,2,130]]],[0,44,11,0,45,213,0,0,[1,78204,5172],[]],[0,35,11,0,36,214,215,0,[1,83378,33],[[83410,2,216]]],[0,40,11,0,41,217,0,0,[1,83410,19],[[83411,2,218]]],[0,17,18,0,19,129,0,0,[1,83430,10007],[[93437,2,130]]],[0,44,11,0,45,219,0,0,[1,93437,54],[]],[0,35,11,0,36,220,221,0,[1,93491,18],[[93509,2,222]]],[0,40,11,0,41,223,0,0,[1,93509,16],[[93509,2,224]]],[0,225,145,0,0,226,0,0,[1,93525,11240],[[0,17,18,0,19,53,0,0,[1,93526,5001],[[98527,2,54]]],[0,132,11,0,133,174,0,0,[1,98527,618],[[98528,2,175]]],[0,17,18,0,19,53,0,0,[1,99146,5013],[[104158,2,54]]],[0,90,11,0,91,227,0,0,[1,104158,393],[]],[0,22,11,0,23,228,0,0,[1,104551,214],[[104552,2,229]]]]],[0,44,11,0,45,230,0,0,[1,104766,30],[]],[0,28,11,0,29,231,0,0,[1,104797,87],[[104797,2,232]]]]]]]],[],[1,1,0,0]]],[],[],[2,2,0,0]];
 </script>
 <script type="text/javascript">
 window.output["strings"] = [];
 </script>
 <script type="text/javascript">
-window.output["strings"] = window.output["strings"].concat(["*","*CreateAccountandContact","*C:\\Users\\senthilkumar.k\\PycharmProjects\\URW_RobotFramework\\Test\\CreateAccountandContact.robot","*../Test/CreateAccountandContact.robot","*Create_New_Account_and_Contact_from_Lead","*Log into the Salesforce Application","*LoginKeywords","*${SiteURL}, ${Browser}, ${username}, ${password}","*Open Browser","*Selenium2Library","*<p>Opens a new browser instance to the optional <code>url\x3c/code>.\x3c/p>","*${SiteURL}, ${Browser}","eNqdy7ENhDAMAMBVLJpUJD3i+eIH+BkScEikJEa2EbA9zEB3zf03bLmtEJgOQQbzS0wVDShB8IKwcwEzekiM8dMl1U0G5w4UjRnL0veS1YpvS6DT1uthQYnEM9qZqvsWWnPrppdxdH4y9gYoRDsl","*Maximize Browser Window","*<p>Maximizes current browser window.\x3c/p>","*Sleep","*BuiltIn","*<p>Pauses the test executed for the given time.\x3c/p>","*2s","*Slept 2 seconds","*Input Text","*<p>Types the given <code>text\x3c/code> into the text field identified by <code>locator\x3c/code>.\x3c/p>","*${txt_loginUserName}, ${username}","*Typing text 'senthilkumar.k@tavant.com.wfprod.sit' into text field 'id:username'.","*${txt_loginPassword}, ${password}","*Typing text 'welcomewelcomewelcomewelcome2024' into text field 'id:password'.","*Click Button","*<p>Clicks the button identified by <code>locator\x3c/code>.\x3c/p>","*${btn_Login}","*Clicking button 'id:Login'.","*Set Browser Implicit Wait","*<p>Sets the implicit wait value used by Selenium.\x3c/p>","*4s","*Get WebElement","*<p>Returns the first WebElement matching the given <code>locator\x3c/code>.\x3c/p>","*xpath=//*[contains(text(),'Leads')]/self::span[@class='slds-truncate']","*${ele}","*${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=\"78bcc760d402541cd323da17e1ffd99b\", element=\"E74644D0BFD00810E6CF80D678F8A293_element_29\")&gt;","*Execute Javascript","*<p>Executes the given JavaScript code with possible arguments.\x3c/p>","*arguments[0].click();, ARGUMENTS, ${ele}","*Executing JavaScript:\narguments[0].click();\nBy using argument:\n'&lt;selenium.webdriver.remote.webelement.WebElement (session=\"78bcc760d402541cd323da17e1ffd99b\", element=\"E74644D0BFD00810E6CF80D678F8A293_element_29\")&gt;'","*Wait Until Element Is Visible","*<p>Waits until the element <code>locator\x3c/code> is visible.\x3c/p>","*xpath=//a[@title='New']/self::a[@class='forceActionLink']","*${elem}","*${elem} = &lt;selenium.webdriver.remote.webelement.WebElement (session=\"78bcc760d402541cd323da17e1ffd99b\", element=\"E74644D0BFD00810E6CF80D678F8A293_element_372\")&gt;","*arguments[0].click();, ARGUMENTS, ${elem}","*Executing JavaScript:\narguments[0].click();\nBy using argument:\n'&lt;selenium.webdriver.remote.webelement.WebElement (session=\"78bcc760d402541cd323da17e1ffd99b\", element=\"E74644D0BFD00810E6CF80D678F8A293_element_372\")&gt;'","*Set Selenium Implicit Wait","*6s","*5s","*Slept 5 seconds","*Switch Window","*<p>Switches to browser window matching <code>locator\x3c/code>.\x3c/p>","*title=New Lead | Salesforce","*xpath=//input[@name='lastName']","*Initialize Random Data Last Name","*LeadCreationKeywords","*Generate Random String","*String","*<p>Generates a string with a desired <code>length\x3c/code> from the given <code>chars\x3c/code>.\x3c/p>","*12, [LETTERS]","*${lastName}","*${lastName} = IvADLbTMMAeK","*Set Global Variable","*<p>Makes a variable available globally in all tests and suites.\x3c/p>","*Enter the Last name","*${lastNameInput}, ${lastName}","*Typing text 'IvADLbTMMAeK' into text field '<a href=\"xpath://input[@name='lastName\">xpath://input[@name='lastName\x3c/a>']'.","*Initialize Random Data DBA Name","*${dbaName}","*${dbaName} = YACAMdwYjBvi","*Enter the DBA Name","*${dbaNameInput}, ${dbaName}","*Typing text 'YACAMdwYjBvi' into text field '<a href=\"xpath://input[@name='Company\">xpath://input[@name='Company\x3c/a>']'.","*Enter the phone number","*${phone}","*${phoneInput}, ${phone}","*Typing text '3485734577' into text field '<a href=\"xpath://input[@name='Phone\">xpath://input[@name='Phone\x3c/a>']'.","*Enter the mobile number","*${mobile}","*${mobileInput}, ${mobile}","*Typing text '439753754' into text field '<a href=\"xpath://input[@name='MobilePhone\">xpath://input[@name='MobilePhone\x3c/a>']'.","*Enter the email","*${email}","*${emailInput}, ${email}","*Typing text 'testemail34@gmail.com' into text field '<a href=\"xpath://input[@name='Email\">xpath://input[@name='Email\x3c/a>']'.","*Scroll Element Into View","*<p>Scrolls the element identified by <code>locator\x3c/code> into view.\x3c/p>","*xpath=//button[@name='Sales_Branch_Level_1_WF__c']","*Click the Sales Branch Level1","*${salesBranchLevel1}","*Clicking button '<a href=\"xpath://button[@name='Sales_Branch_Level_1_WF__c\">xpath://button[@name='Sales_Branch_Level_1_WF__c\x3c/a>']'.","*Click Element","*<p>Click the element identified by <code>locator\x3c/code>.\x3c/p>","*${sbL1PicklistValue}","eNqtzEEKwjAQQNGrhC6cFtTsY1uqgpeQLoZx2gbTJGRG7PEF8QguPzz+NXh6+jgbDrxyVAMtmqXw1FVbRl2ctZIx3gcKKNKBhIcctLwioTKMVjhMzn0Jpajoo9TKm9bNHi44S9X/ZdNa7M0O13wyt5T0zVh+eSZikVQ8CzQjHD+GxklM","*xpath=//button[@name='Sales_Branch_Level_3_WF__c']","*Click the Sales Branch Level3","*${salesBranchLevel3}","*Clicking button '<a href=\"xpath://button[@name='Sales_Branch_Level_3_WF__c\">xpath://button[@name='Sales_Branch_Level_3_WF__c\x3c/a>']'.","*${sbL3PicklistValue}","eNqtzFEKwjAMANCrlP1kA7X/ZRvCjjH2EbrUFmM6mog7vuAZ/H+8hUt8Fnk4YnqRmIMRXW6Upu480HLwXg+U9R4ZVSdQ3vVq7S0RjWDzSpxC+JFYxbCI9kan9cMFllx4byTd/Ldq9Di7VKt9CBsMG9y+P3dEsg==","*xpath=//input[@name='country']","*Click on the Country Code","*${countryCode}","*Clicking element '<a href=\"xpath://input[@name='country\">xpath://input[@name='country\x3c/a>']'.","*${countryCodePicklist}","eNqtzFEKgzAMANCrFH+i4Nb/ouLwGMOP0KW2LEYxGXj8gWfw//EmLvFbZHHEtJKYgw5dPij11bmj5eC97ijvMTKq9qD80YcdP4loBLNX4hTCReImhkW0Njqtblp4pSWjFDWUarhz6zwO0Mzw/AN/okOh","*Enter the City","*${city}","*${cityInput}, ${city}","*Typing text 'Hosur' into text field '<a href=\"xpath://input[@name='city\">xpath://input[@name='city\x3c/a>']'.","*Enter the PostalCode","*${postal}","*${postalCodeInput}, ${postal}","*Typing text '634332' into text field '<a href=\"xpath://input[@name='postalCode\">xpath://input[@name='postalCode\x3c/a>']'.","*xpath=//button[contains(text(),'Save')]/self::button[@class='slds-button slds-button_brand']","*${element}","*${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=\"78bcc760d402541cd323da17e1ffd99b\", element=\"E74644D0BFD00810E6CF80D678F8A293_element_398\")&gt;","*arguments[0].click();, ARGUMENTS, ${element}","*Executing JavaScript:\narguments[0].click();\nBy using argument:\n'&lt;selenium.webdriver.remote.webelement.WebElement (session=\"78bcc760d402541cd323da17e1ffd99b\", element=\"E74644D0BFD00810E6CF80D678F8A293_element_398\")&gt;'","*Click on the DC Convert button","*${dcConvertButton}, 20s","*${dcConvertButton}","*Clicking button '<a href=\"xpath://button[@class='slds-button\">xpath://button[@class='slds-button\x3c/a> slds-button_neutral']/self::button[contains(text(),'DC Convert')]'.","*10s","*Slept 10 seconds","*title=Convert - Duplicate Check for Salesforce | Salesforce","*Select Frame","*<p>Sets frame identified by <code>locator\x3c/code> as the current frame.\x3c/p>","*xpath=//iframe[@title='Convert - Duplicate Check for Salesforce']","*Selecting frame 'xpath=//iframe[@title='Convert - Duplicate Check for Salesforce']'.","*Click on the Convert button","*${convertButton}, 10s","*${convertButton}","*Clicking button '<a href=\"xpath://section[@class='slds-modal\">xpath://section[@class='slds-modal\x3c/a> slds-fade-in-open']/descendant::button[@title='Convert']'."]);
+window.output["strings"] = window.output["strings"].concat(["*","*Suites","*<p><a href=\"https://pabot.org/?ref=log\">Pabot\x3c/a> result from 2 executions.\x3c/p>","*CreateAccountandContact","*C:\\Users\\senthilkumar.k\\PycharmProjects\\URW_RobotFramework\\Test\\CreateAccountandContact.robot","*../Test/CreateAccountandContact.robot","*Create_New_Account_and_Contact_from_Lead","*Log into the Salesforce Application","*LoginKeywords","*${SiteURL}    ${Browser}    ${username}    ${password}","*Open Browser","*Selenium2Library","*<p>Opens a new browser instance to the optional <code>url\x3c/code>.\x3c/p>","*${SiteURL}    ${Browser}","eNqdy7ENhDAMAMBVLJpUJD3i+eIH+BkScEikJEa2EbA9zEB3zf03bLmtEJgOQQbzS0wVDShB8IKwcwEzekiM8dMl1U0G5w4UjRnL0veS1YpvS6DT1uthQYnEM9qZqvsWWnPrppdxdH4y9gYoRDsl","*Maximize Browser Window","*<p>Maximizes current browser window.\x3c/p>","*Sleep","*BuiltIn","*<p>Pauses the test executed for the given time.\x3c/p>","*2s","*Slept 2 seconds.","*Input Text","*<p>Types the given <code>text\x3c/code> into the text field identified by <code>locator\x3c/code>.\x3c/p>","*${txt_loginUserName}    ${username}","*Typing text 'senthilkumar.k@tavant.com.sitdm' into text field 'id:username'.","*${txt_loginPassword}    ${password}","*Typing text 'welcomewelcomewelcomewelcome2024' into text field 'id:password'.","*Click Button","*<p>Clicks the button identified by <code>locator\x3c/code>.\x3c/p>","*${btn_Login}","*Clicking button 'id:Login'.","*Set Browser Implicit Wait","*<p>Sets the implicit wait value used by Selenium.\x3c/p>","*4s","*Get WebElement","*<p>Returns the first WebElement matching the given <code>locator\x3c/code>.\x3c/p>","*xpath=//*[contains(text(),'Leads')]/self::span[@class='slds-truncate']","*${ele}","*${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session=\"fd1b94cfe73521ed834401464b0c02df\", element=\"B4D9ADB09EF7B2C70A86B134F30E3A8D_element_167\")&gt;","*Execute Javascript","*<p>Executes the given JavaScript code with possible arguments.\x3c/p>","*arguments[0].click();    ARGUMENTS    ${ele}","*Executing JavaScript:\narguments[0].click();\nBy using argument:\n'&lt;selenium.webdriver.remote.webelement.WebElement (session=\"fd1b94cfe73521ed834401464b0c02df\", element=\"B4D9ADB09EF7B2C70A86B134F30E3A8D_element_167\")&gt;'","*Wait Until Element Is Visible","*<p>Waits until the element <code>locator\x3c/code> is visible.\x3c/p>","*xpath=//a[@title='New']/self::a[@class='forceActionLink']","*${elem}","*${elem} = &lt;selenium.webdriver.remote.webelement.WebElement (session=\"fd1b94cfe73521ed834401464b0c02df\", element=\"B4D9ADB09EF7B2C70A86B134F30E3A8D_element_182\")&gt;","*arguments[0].click();    ARGUMENTS    ${elem}","*Executing JavaScript:\narguments[0].click();\nBy using argument:\n'&lt;selenium.webdriver.remote.webelement.WebElement (session=\"fd1b94cfe73521ed834401464b0c02df\", element=\"B4D9ADB09EF7B2C70A86B134F30E3A8D_element_182\")&gt;'","*Set Selenium Implicit Wait","*6s","*5s","*Slept 5 seconds.","*Switch Window","*<p>Switches to browser window matching <code>locator\x3c/code>.\x3c/p>","*title=New Lead | Salesforce","*xpath=//input[@name='lastName']","*Initialize Random Data Last Name","*LeadCreationKeywords","*Generate Random String","*String","*<p>Generates a string with a desired <code>length\x3c/code> from the given <code>chars\x3c/code>.\x3c/p>","*12    [LETTERS]","*${lastName}","*${lastName} = YlbhZWqWlOmK","*Set Global Variable","*<p>Makes a variable available globally in all tests and suites.\x3c/p>","*Enter the Last name","*${lastNameInput}    ${lastName}","*Typing text 'YlbhZWqWlOmK' into text field '<a href=\"xpath://input[@name='lastName\">xpath://input[@name='lastName\x3c/a>']'.","*Initialize Random Data DBA Name","*${dbaName}","*${dbaName} = ALPpcJzAlCEC","*Enter the DBA Name","*${dbaNameInput}    ${dbaName}","*Typing text 'ALPpcJzAlCEC' into text field '<a href=\"xpath://input[@name='Company\">xpath://input[@name='Company\x3c/a>']'.","*Enter the phone number","*${phone}","*${phoneInput}    ${phone}","*Typing text '3485734577' into text field '<a href=\"xpath://input[@name='Phone\">xpath://input[@name='Phone\x3c/a>']'.","*Enter the mobile number","*${mobile}","*${mobileInput}    ${mobile}","*Typing text '439753754' into text field '<a href=\"xpath://input[@name='MobilePhone\">xpath://input[@name='MobilePhone\x3c/a>']'.","*Enter the email","*${email}","*${emailInput}    ${email}","*Typing text 'testemail34@gmail.com' into text field '<a href=\"xpath://input[@name='Email\">xpath://input[@name='Email\x3c/a>']'.","*Scroll Element Into View","*<p>Scrolls the element identified by <code>locator\x3c/code> into view.\x3c/p>","*xpath=//button[@name='Sales_Branch_Level_1_WF__c']","*Click the Sales Branch Level1","*${salesBranchLevel1}","*Clicking button '<a href=\"xpath://button[@name='Sales_Branch_Level_1_WF__c\">xpath://button[@name='Sales_Branch_Level_1_WF__c\x3c/a>']'.","*Click Element","*<p>Click the element identified by <code>locator\x3c/code>.\x3c/p>","*${sbL1PicklistValue}","eNqtzEEKwjAQQNGrhC6cFtTsY1uqgpeQLoZx2gbTJGRG7PEF8QguPzz+NXh6+jgbDrxyVAMtmqXw1FVbRl2ctZIx3gcKKNKBhIcctLwioTKMVjhMzn0Jpajoo9TKm9bNHi44S9X/ZdNa7M0O13wyt5T0zVh+eSZikVQ8CzQjHD+GxklM","*xpath=//button[@name='Sales_Branch_Level_3_WF__c']","*Click the Sales Branch Level3","*${salesBranchLevel3}","*Clicking button '<a href=\"xpath://button[@name='Sales_Branch_Level_3_WF__c\">xpath://button[@name='Sales_Branch_Level_3_WF__c\x3c/a>']'.","*${sbL3PicklistValue}","eNqtzFEKwjAMANCrlP1kA7X/ZRvCjjH2EbrUFmM6mog7vuAZ/H+8hUt8Fnk4YnqRmIMRXW6Upu480HLwXg+U9R4ZVSdQ3vVq7S0RjWDzSpxC+JFYxbCI9kan9cMFllx4byTd/Ldq9Di7VKt9CBsMG9y+P3dEsg==","*xpath=//input[@name='country']","*Click on the Country Code","*${countryCode}","*Clicking element '<a href=\"xpath://input[@name='country\">xpath://input[@name='country\x3c/a>']'.","*${countryCodePicklist}","eNqtzFEKgzAMANCrFH+i4Nb/ouLwGMOP0KW2LEYxGXj8gWfw//EmLvFbZHHEtJKYgw5dPij11bmj5eC97ijvMTKq9qD80YcdP4loBLNX4hTCReImhkW0Njqtblp4pSWjFDWUarhz6zwO0Mzw/AN/okOh","*Enter the City","*${city}","*${cityInput}    ${city}","*Typing text 'Hosur' into text field '<a href=\"xpath://input[@name='city\">xpath://input[@name='city\x3c/a>']'.","*Enter the PostalCode","*${postal}","*${postalCodeInput}    ${postal}","*Typing text '634332' into text field '<a href=\"xpath://input[@name='postalCode\">xpath://input[@name='postalCode\x3c/a>']'.","*xpath=//button[contains(text(),'Save')]/self::button[@class='slds-button slds-button_brand']","*${element}","*${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session=\"fd1b94cfe73521ed834401464b0c02df\", element=\"B4D9ADB09EF7B2C70A86B134F30E3A8D_element_210\")&gt;","*arguments[0].click();    ARGUMENTS    ${element}","*Executing JavaScript:\narguments[0].click();\nBy using argument:\n'&lt;selenium.webdriver.remote.webelement.WebElement (session=\"fd1b94cfe73521ed834401464b0c02df\", element=\"B4D9ADB09EF7B2C70A86B134F30E3A8D_element_210\")&gt;'","*Click on the DC Convert button","*${dcConvertButton}    20s","*${dcConvertButton}","*Clicking button '<a href=\"xpath://button[@class='slds-button\">xpath://button[@class='slds-button\x3c/a> slds-button_neutral']/self::button[contains(text(),'DC Convert')]'.","*10s","*Slept 10 seconds.","*title=Convert - Duplicate Check for Salesforce | Salesforce","*Select Frame","*<p>Sets frame identified by <code>locator\x3c/code> as the current frame.\x3c/p>","*xpath=//iframe[@title='Convert - Duplicate Check for Salesforce']","*Selecting frame 'xpath=//iframe[@title='Convert - Duplicate Check for Salesforce']'.","*Click on the Convert button","*${convertButton}    10s","*${convertButton}","*Clicking button '<a href=\"xpath://section[@class='slds-modal\">xpath://section[@class='slds-modal\x3c/a> slds-fade-in-open']/descendant::button[@title='Convert']'.","*NewOpportunityCreation","*C:\\Users\\senthilkumar.k\\PycharmProjects\\URW_RobotFramework\\Test\\NewOpportunityCreation.robot","*../Test/NewOpportunityCreation.robot","*Create_a_New_Agreement_type","*Click on the Account Navigation Link","*NewOpportunityCreationKeywords","*xpath=//span[contains(text(),'Accounts')]/self::span[@class='slds-truncate']","*${AccountLink}","*${AccountLink} = &lt;selenium.webdriver.remote.webelement.WebElement (session=\"f27e34674589569d43333288794e8c34\", element=\"29DC194EBFF7B60193B1AD499D82F9B7_element_170\")&gt;","*arguments[0].click();    ARGUMENTS    ${AccountLink}","*Executing JavaScript:\narguments[0].click();\nBy using argument:\n'&lt;selenium.webdriver.remote.webelement.WebElement (session=\"f27e34674589569d43333288794e8c34\", element=\"29DC194EBFF7B60193B1AD499D82F9B7_element_170\")&gt;'","*Click on the Drop down Icon","*${accountListViewDropDownIcon}    20s","*${accountListViewDropDownIcon}","eNqlzDEOAiEQRuGrTLaZTnqybDS2diY2ZotZHF0iAoF/o95e7mD/vneMwT9DepBGfWkC8Si0Vr274VMEqzWmFUnXfZEKx0ve0k3ql2cjyWtDrtYuG5B7goCojs995TFM//nRyERCp9BAl6BvSwfvu0bjmXc/vBVBZA==","*Click on the All Account drop down option","*${allAccountListOption}    20s","*${allAccountListOption}","*Clicking element '<a href=\"xpath://span[contains(text(),'All\">xpath://span[contains(text(),'All\x3c/a> Accounts')]/self::span[@class=' virtualAutocompleteOptionText']'.","*Select the account to create a new agreement deal","*3s","*Slept 3 seconds.","*Click Link","*<p>Clicks a link identified by <code>locator\x3c/code>.\x3c/p>","*${accountName}","*Clicking link '<a href=\"xpath://a[@title='#kimchi\">xpath://a[@title='#kimchi\x3c/a> cosplay']'.","*Click on the Related Tab","*${relatedTab}    20s","*${relatedTab}","eNqtzEEKgzAQBdCrBDezarMPRgreoNsiYTQ/dXCU0plCj196B9cP3qiybHI8AxQ7Dg/Uc1jfaLn7vtjXFKPK4+biikx3KDsqTdGgLaU/LcpmmUyrXZxnKxWNP+qliGPvhlOaPvJAE11/b3s+VA==","*Click on the New Opportunity type button","*${newOpportunityButton}","eNq9zcEKgkAURuFXETejkc5+UImElrVsIRKX8apDekfGX7K3z6dof/hOPTn7djJEPPHMgkgVFI2B+zLeF8JotD411gvIyZqAdyTpWd35o9JWk1he4YMxk2suHYEyUBgY2XpwFs5LJjRzqda+s6bejni+boCX/LEsPmATh29+cK/nLa7+fSw0VapV+Q+ffF12","*Click on the Next button","*${iframeXpath}","*Selecting frame '<a href=\"xpath://iframe[@title='accessibility\">xpath://iframe[@title='accessibility\x3c/a> title']'.","*${nextButton}    20s","*${nextButton}","eNpzzslMzs7MS1dIKi0pyc9TULdJVMgoSk2zVaooSCzJsNLXh0hEOyTnJBYX26oX56QU60LElOwIq7HRT7RTQOLr6uallpYUJeYgCyKz42HyeakVJTD50kwnqO6U1LTE0pwSuIh6rLoeAJ4PSG0=","*Fill the New deal fields at the offer stage","*${centerName}","*${centerNameInput}    ${centerName}","eNqVTrEKgzAQ/ZXD5aY0LV1KUCk4ubsVkWCSGhpiMBfQvy+NDq5d3t177x73ui1Y/wbSKwE22lNaNmgsbQjW07wbxmqnAEsJ06JNVaxB0iQ4tz4kej1HJ2OsMDoVmZvnTwrDELVcxonli6L+M1ByWUN2M4Udk23Ps/s1O3bGlDYyuZOQM9jzqJ0R4nhsVYWP+01cscfLFxtDWrw=","*${centerNameOption}","*Clicking element '<a href=\"xpath://a[contains(text(),'Century\">xpath://a[contains(text(),'Century\x3c/a> City')]'.","*${useType}","*Clicking button '<a href=\"xpath://button[@class='slds-button\">xpath://button[@class='slds-button\x3c/a> slds-button_neutral slds-picklist__label updateJustifyContent']'.","*${useTypeListOption}","eNqtzFEKgzAMANCrFH+isK3/RWUgeAnxI9Q4y7JUmggef+AZ/H+8gVP8Jvk4YvqRmIMW3VZo7apzR9uC97qjTO/IqNqB8qJPK4dENILZK/EawkViFsMkWhudVjcPGHNeqv6WpvXYuyEfxaCZ4fUHQoJAFg==","*${unitOrNewUnit}","eNpzzslMzs7MS1dIzUnNTc0rUVC3SVTIKEpNs1WqKEgsybDS18/MKygtiXZIzkksLrZVL85JKdYFCynZEVJho59opwBmKZRmeiLTIakVcLaubkpqWmJpDpIAWI96rH5xak6alRXU+MwUW3VDA0NTKwP1WHU9AEf9QZg=","*Select Radio Button","*<p>Sets the radio button group <code>group_name\x3c/code> to <code>value\x3c/code>.\x3c/p>","*others    01t1L00000J3CWUQA3","*Selecting '01t1L00000J3CWUQA3' from radio button 'others'.","*${saveAndExitButton}    5s","*${saveAndExitButton}","*Clicking button '<a href=\"xpath://button[contains(text(),'Save\">xpath://button[contains(text(),'Save\x3c/a> and Exit')]'.","*Edit the Opportunity at the Proposal stage","*Enter the space delivery date","*${SpaceDelivery}","*${spaceDelieveryInput}    ${SpaceDelivery}","*Typing text '12/1/2023' into text field '<a href=\"xpath://input[@id='input-15\">xpath://input[@id='input-15\x3c/a>']'.","*Enter the RCD date","*${newRCD}","*${newRCDdate}    ${newRCD}","*Typing text '12/3/2023' into text field '<a href=\"xpath://input[@id='input-18\">xpath://input[@id='input-18\x3c/a>']'.","*Enter the expiration date","*${expiration}","*${expirationDate}    ${expiration}","*Typing text '12/2/2028' into text field '<a href=\"xpath://input[@id='input-21\">xpath://input[@id='input-21\x3c/a>']'.","*${saveButton}","*Clicking button '<a href=\"xpath://button[@class='slds-button\">xpath://button[@class='slds-button\x3c/a> slds-button_brand save-btn btn primary-btn']'.","*${markStageAsCompleteButton}    20s","*xpath=//span[text()='Mark Stage as Complete']","*${MarkStageAsComplete}","*${MarkStageAsComplete} = &lt;selenium.webdriver.remote.webelement.WebElement (session=\"f27e34674589569d43333288794e8c34\", element=\"29DC194EBFF7B60193B1AD499D82F9B7_element_668\")&gt;","*arguments[0].click();    ARGUMENTS    ${MarkStageAsComplete}","*Executing JavaScript:\narguments[0].click();\nBy using argument:\n'&lt;selenium.webdriver.remote.webelement.WebElement (session=\"f27e34674589569d43333288794e8c34\", element=\"29DC194EBFF7B60193B1AD499D82F9B7_element_668\")&gt;'","*${editOpportunityButton}    20s","*xpath=//button[text()='Edit Opportunity']","*${EditOpportunity}","*${EditOpportunity} = &lt;selenium.webdriver.remote.webelement.WebElement (session=\"f27e34674589569d43333288794e8c34\", element=\"29DC194EBFF7B60193B1AD499D82F9B7_element_670\")&gt;","*arguments[0].click();    ARGUMENTS    ${EditOpportunity}","*Executing JavaScript:\narguments[0].click();\nBy using argument:\n'&lt;selenium.webdriver.remote.webelement.WebElement (session=\"f27e34674589569d43333288794e8c34\", element=\"29DC194EBFF7B60193B1AD499D82F9B7_element_670\")&gt;'","*Enter the Projected Sales field on the deal sheet","*${projectedSales}","*${inputProjectedSales}","*${inputProjectedSales}    ${projectedSales}","eNqtjEEKgzAQAL8SvOytKT0GI95Kz3oTKYtZmy12E8yW2t9X8Aud4zBM/80sD6O0qYHLeQcMi6bDzExLMFCjiSvNvtoyanTWFpqUkwwtBw/X2/0TU3coGG2gMpEEFHWOJb91aAVf5CGv6blXFDpcqFTNP2+1xQZGOP0AolBJnw==","*${saveAsDraftButton}    20s","*${saveAsDraftButton}","*Clicking button '<a href=\"xpath://button[text()='Save\">xpath://button[text()='Save\x3c/a> As Draft']'."]);
 </script>
 <script type="text/javascript">
-window.output["stats"] = [[{"elapsed":"00:01:18","fail":0,"label":"All Tests","pass":1,"skip":0}],[],[{"elapsed":"00:01:18","fail":0,"id":"s1","label":"CreateAccountandContact","name":"CreateAccountandContact","pass":1,"skip":0}]];
+window.output["stats"] = [[{"elapsed":"00:03:11","fail":0,"label":"All Tests","pass":2,"skip":0}],[],[{"elapsed":"00:01:47","fail":0,"id":"s1","label":"Suites","name":"Suites","pass":2,"skip":0},{"elapsed":"00:01:27","fail":0,"id":"s1-s1","label":"Suites.CreateAccountandContact","name":"CreateAccountandContact","pass":1,"skip":0},{"elapsed":"00:01:44","fail":0,"id":"s1-s2","label":"Suites.NewOpportunityCreation","name":"NewOpportunityCreation","pass":1,"skip":0}]];
 </script>
 <script type="text/javascript">
 window.output["errors"] = [];
 </script>
 <script type="text/javascript">
-window.output["baseMillis"] = 1704901222708;
+window.output["baseMillis"] = 1707379135136;
 </script>
 <script type="text/javascript">
-window.output["generated"] = 77963;
+window.output["generated"] = 107306;
 </script>
 <script type="text/javascript">
 window.output["expand_keywords"] = null;
 </script>
 <script type="text/javascript">
-window.settings = {"defaultLevel":"INFO","minLevel":"INFO","reportURL":"report.html","rpa":false,"splitLogBase":"log","title":""};
+window.settings = {"defaultLevel":"TRACE","minLevel":"INFO","reportURL":"report.html","rpa":null,"splitLogBase":"log","title":""};
 </script>
 <title></title>
 </head>
-<body>
+<body data-theme="dark">
 <div id="javascript-disabled">
   <h1>Opening Robot Framework log failed</h1>
   <ul>
@@ -1844,12 +2119,13 @@ window.settings = {"defaultLevel":"INFO","minLevel":"INFO","reportURL":"report.h
   </ul>
 </div>
 <script type="text/javascript">removeJavaScriptDisabledWarning();</script>
-
 <div id="header"></div>
 <div id="statistics-container"></div>
 
 <script type="text/javascript">
 $(document).ready(function() {
+    storage.init();
+    theme.init(storage);
     try {
         var topsuite = window.testdata.suite();
     } catch (error) {
@@ -1857,6 +2133,7 @@ $(document).ready(function() {
         return;
     }
     initLayout(topsuite.name, 'Log');
+    theme.reflectPreference();
     addStatistics();
     addErrors();
     addExecutionLog(topsuite);
@@ -1897,25 +2174,6 @@ function drawErrorsRecursively(errors, target) {
         // Errors may have moved scroll position. Resetting location re-scrolls.
         if (window.location.hash)
             window.location.replace(window.location.hash);
-        highlightLinkTarget();
-    }
-}
-
-function highlightLinkTarget() {
-    if (window.location.hash) {
-        var target = $(window.location.hash);
-        highlight(target);
-    }
-}
-
-function highlight(element, color) {
-    if (color === undefined)
-        color = 242;
-    if (color < 255) {
-        element.css({'background-color': 'rgb('+color+','+color+','+color+')'});
-        setTimeout(function () { highlight(element, color+1); }, 300);
-    } else {
-        element.css({'background-color': ''});
     }
 }
 
@@ -1933,7 +2191,6 @@ function makeElementVisible(id) {
             expandFailed(window.testdata.findLoaded(util.last(ids)));
             window.location.hash = id;
             document.getElementById(id).scrollIntoView();
-            highlightLinkTarget();
         }
     });
 }
@@ -2131,8 +2388,9 @@ function addExecutionLog(main) {
       <div class="element-header-left" title="${type}  {{if name}}{{html fullName}}  {{/if}}[${status}]">
         <span class="elapsed" title="Elapsed time">${times.elapsedTime}</span>
         <span class="label ${status.toLowerCase()}">${type}</span>
-        <span>{{html assign}}</span>
+        <span class="assign">{{html assign}}</span>
         <span class="name"><span class="parent-name">{{html libname}}{{if libname}} . {{/if}}</span>{{html name}}</span>
+        &nbsp;
         <span class="arg">{{html arguments}}</span>
       </div>
       <div class="element-header-right" onclick="stopPropagation(event)">
@@ -2166,6 +2424,12 @@ function addExecutionLog(main) {
           <th>Start / End / Elapsed:</th>
           <td>${times.startTime} / ${times.endTime} / ${times.elapsedTime}</td>
         </tr>
+        {{if message()}}
+        <tr>
+          <th>Message:</th>
+          <td class="message">{{html message()}}</td>
+        </tr>
+        {{/if}}
       </table>
     </div>
   </div>
@@ -2188,6 +2452,7 @@ function addExecutionLog(main) {
   <div id="log-level-selector">
   Log level:
     <select onchange="logLevelSelected(this.options[selectedIndex].value)">
+      <option value="3">WARN</option>
       <option value="2">INFO</option>
       <option value="1">DEBUG</option>
       {{if showTrace()}}<option value="0">TRACE</option>{{/if}}

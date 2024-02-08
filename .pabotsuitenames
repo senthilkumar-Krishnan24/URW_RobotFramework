@@ -1,6 +1,6 @@
-datasources:1ea99f78c64675b0e43507d2b673139c7628af65
-commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+datasources:bddc92e244886fd057cad5f3997885cd87b0f86c
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
 suitesfrom:no-suites-from-option
-file:fa72e650d38adb8cf46b4713d0b0d8959746bdc2
---suite Test.CreateAccountandContact
---suite Test.NewOpportunityCreation
+file:e8f931e25dc689327096c7930421857ab8bf4eb5
+--suite Suites.CreateAccountandContact
+--suite Suites.NewOpportunityCreation

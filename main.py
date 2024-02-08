@@ -1,18 +1,22 @@
-# This is a sample Python script.
+import array as arr
+#arr = [1, 2, 11, 22, 233, 5, 7, 2]
+#arr.sort()
+#print(arr)
+#print(arr[-2])
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+temp = arr.array('i', [])
+print(temp)
+numbers = arr.array('i', [1, 2, 11, 22, 233, 5, 7, 2])
+print(numbers)
+#lis = numbers
+for num in range(len(numbers)):
+    for numb in range(len(numbers)):
+        if numbers[num] > numbers[numb]:
 
+            temp = numbers[num]
+            numbers[num] = numbers[numb]
+            numbers[numb] = temp
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+            #print(temp, numbers[num], numbers[numb])
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-
-print("Hello Python")
+print("Second highest value in the int array  : ", numbers[1])

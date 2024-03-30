@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.10 on win32)" generated="2024-02-13T11:15:53.829831" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="CreateAccountandContact" source="C:\Users\senthilkumar.k\PycharmProjects\URW_RobotFramework\Test\CreateAccountandContact.robot">
+<test id="s1-s1-t1" name="Create_New_Account_and_Contact_from_Lead" line="9">
+<kw name="Log into the Salesforce Application" owner="LoginKeywords">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-02-13T11:15:54.195257" level="INFO">Opening browser 'Chrome' to base url 'https://westfield--sit.sandbox.my.salesforce.com/?login'.</msg>
+<arg>${SiteURL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-13T11:15:54.195257" elapsed="5.279050"/>
+</kw>
+<kw name="Maximize Browser Window" owner="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-13T11:15:59.474307" elapsed="0.117148"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-13T11:16:01.606572" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-13T11:15:59.591455" elapsed="2.015117"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:01.608446" level="INFO">Typing text 'senthilkumar.k@tavant.com.sitdm' into text field 'id:username'.</msg>
+<arg>${txt_loginUserName}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:01.607438" elapsed="0.162524"/>
+</kw>
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:01.771961" level="INFO">Typing text 'welcomewelcomewelcomewelcome2024' into text field 'id:password'.</msg>
+<arg>${txt_loginPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:01.770962" elapsed="0.072072"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:01.844035" level="INFO">Clicking button 'id:Login'.</msg>
+<arg>${btn_Login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:01.843034" elapsed="16.576748"/>
+</kw>
+<arg>${SiteURL}</arg>
+<arg>${Browser}</arg>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2024-02-13T11:15:54.194242" elapsed="24.226557"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="Selenium2Library">
+<arg>4s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-02-13T11:16:18.420799" elapsed="0.001996"/>
+</kw>
+<kw name="Get WebElement" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:18.441561" level="INFO">${ele} = &lt;selenium.webdriver.remote.webelement.WebElement (session="94c0ad66d3f599d6b1c3453f4ccfcf8f", element="DC36D9B0AC28EAF82291FAE3B1D2A638_element_166")&gt;</msg>
+<var>${ele}</var>
+<arg>xpath=//*[contains(text(),'Leads')]/self::span[@class='slds-truncate']</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:18.423794" elapsed="0.017767"/>
+</kw>
+<kw name="Execute Javascript" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:18.443588" level="INFO">Executing JavaScript:
+arguments[0].click();
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="94c0ad66d3f599d6b1c3453f4ccfcf8f", element="DC36D9B0AC28EAF82291FAE3B1D2A638_element_166")&gt;'</msg>
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${ele}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-02-13T11:16:18.441561" elapsed="0.022218"/>
+</kw>
+<kw name="Set Browser Implicit Wait" owner="Selenium2Library">
+<arg>4s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-02-13T11:16:18.463779" elapsed="0.002539"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>xpath=//a[@title='New']/self::a[@class='forceActionLink']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-13T11:16:18.467316" elapsed="1.884827"/>
+</kw>
+<kw name="Get WebElement" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:20.370284" level="INFO">${elem} = &lt;selenium.webdriver.remote.webelement.WebElement (session="94c0ad66d3f599d6b1c3453f4ccfcf8f", element="DC36D9B0AC28EAF82291FAE3B1D2A638_element_182")&gt;</msg>
+<var>${elem}</var>
+<arg>xpath=//a[@title='New']/self::a[@class='forceActionLink']</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:20.352143" elapsed="0.018141"/>
+</kw>
+<kw name="Execute Javascript" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:20.371328" level="INFO">Executing JavaScript:
+arguments[0].click();
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="94c0ad66d3f599d6b1c3453f4ccfcf8f", element="DC36D9B0AC28EAF82291FAE3B1D2A638_element_182")&gt;'</msg>
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${elem}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-02-13T11:16:20.370284" elapsed="0.017225"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="Selenium2Library">
+<arg>6s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-02-13T11:16:20.387509" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-13T11:16:25.396449" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-13T11:16:20.387509" elapsed="5.008940"/>
+</kw>
+<kw name="Switch Window" owner="Selenium2Library">
+<arg>title=New Lead | Salesforce</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:25.396449" elapsed="0.018003"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>xpath=//input[@name='lastName']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-13T11:16:25.414452" elapsed="0.033925"/>
+</kw>
+<kw name="Initialize Random Data Last Name" owner="LeadCreationKeywords">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-02-13T11:16:25.448377" level="INFO">${lastName} = kcEuUrFwirKW</msg>
+<var>${lastName}</var>
+<arg>12</arg>
+<arg>[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-02-13T11:16:25.448377" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-02-13T11:16:25.448377" level="INFO">${lastName} = kcEuUrFwirKW</msg>
+<arg>${lastName}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-02-13T11:16:25.448377" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-13T11:16:25.448377" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the Last name" owner="LeadCreationKeywords">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:25.448377" level="INFO">Typing text 'kcEuUrFwirKW' into text field 'xpath://input[@name='lastName']'.</msg>
+<arg>${lastNameInput}</arg>
+<arg>${lastName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:25.448377" elapsed="0.268230"/>
+</kw>
+<arg>${lastName}</arg>
+<status status="PASS" start="2024-02-13T11:16:25.448377" elapsed="0.268230"/>
+</kw>
+<kw name="Initialize Random Data DBA Name" owner="LeadCreationKeywords">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-02-13T11:16:25.716607" level="INFO">${dbaName} = rAGfhIeQrAfj</msg>
+<var>${dbaName}</var>
+<arg>12</arg>
+<arg>[LETTERS]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-02-13T11:16:25.716607" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2024-02-13T11:16:25.716607" level="INFO">${dbaName} = rAGfhIeQrAfj</msg>
+<arg>${dbaName}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2024-02-13T11:16:25.716607" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-02-13T11:16:25.716607" elapsed="0.000000"/>
+</kw>
+<kw name="Enter the DBA Name" owner="LeadCreationKeywords">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:25.716607" level="INFO">Typing text 'rAGfhIeQrAfj' into text field 'xpath://input[@name='Company']'.</msg>
+<arg>${dbaNameInput}</arg>
+<arg>${dbaName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:25.716607" elapsed="0.234738"/>
+</kw>
+<arg>${dbaName}</arg>
+<status status="PASS" start="2024-02-13T11:16:25.716607" elapsed="0.234738"/>
+</kw>
+<kw name="Enter the phone number" owner="LeadCreationKeywords">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:25.951345" level="INFO">Typing text '3485734577' into text field 'xpath://input[@name='Phone']'.</msg>
+<arg>${phoneInput}</arg>
+<arg>${phone}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:25.951345" elapsed="0.232964"/>
+</kw>
+<arg>${phone}</arg>
+<status status="PASS" start="2024-02-13T11:16:25.951345" elapsed="0.232964"/>
+</kw>
+<kw name="Enter the mobile number" owner="LeadCreationKeywords">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:26.184309" level="INFO">Typing text '439753754' into text field 'xpath://input[@name='MobilePhone']'.</msg>
+<arg>${mobileInput}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:26.184309" elapsed="0.190449"/>
+</kw>
+<arg>${mobile}</arg>
+<status status="PASS" start="2024-02-13T11:16:26.184309" elapsed="0.190449"/>
+</kw>
+<kw name="Enter the email" owner="LeadCreationKeywords">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:26.380795" level="INFO">Typing text 'testemail34@gmail.com' into text field 'xpath://input[@name='Email']'.</msg>
+<arg>${emailInput}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:26.380795" elapsed="0.288593"/>
+</kw>
+<arg>${email}</arg>
+<status status="PASS" start="2024-02-13T11:16:26.374758" elapsed="0.294630"/>
+</kw>
+<kw name="Scroll Element Into View" owner="Selenium2Library">
+<arg>xpath=//button[@name='Sales_Branch_Level_1_WF__c']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-02-13T11:16:26.669388" elapsed="0.296824"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>xpath=//button[@name='Sales_Branch_Level_1_WF__c']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-13T11:16:26.966212" elapsed="0.024583"/>
+</kw>
+<kw name="Click the Sales Branch Level1" owner="LeadCreationKeywords">
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:26.990795" level="INFO">Clicking button 'xpath://button[@name='Sales_Branch_Level_1_WF__c']'.</msg>
+<arg>${salesBranchLevel1}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:26.990795" elapsed="0.123949"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:27.115749" level="INFO">Clicking element 'xpath://span[@class='slds-truncate']/self::span[contains(text(),'Bags &amp; Footwear &amp; Accessories')]'.</msg>
+<arg>${sbL1PicklistValue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:27.114744" elapsed="0.091663"/>
+</kw>
+<status status="PASS" start="2024-02-13T11:16:26.990795" elapsed="0.215612"/>
+</kw>
+<kw name="Scroll Element Into View" owner="Selenium2Library">
+<arg>xpath=//button[@name='Sales_Branch_Level_3_WF__c']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-02-13T11:16:27.206407" elapsed="0.310259"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>xpath=//button[@name='Sales_Branch_Level_3_WF__c']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-13T11:16:27.516666" elapsed="0.036522"/>
+</kw>
+<kw name="Click the Sales Branch Level3" owner="LeadCreationKeywords">
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:27.553188" level="INFO">Clicking button 'xpath://button[@name='Sales_Branch_Level_3_WF__c']'.</msg>
+<arg>${salesBranchLevel3}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:27.553188" elapsed="0.108388"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:27.661576" level="INFO">Clicking element 'xpath://span[@class='slds-truncate']/self::span[contains(text(),'Children footwear')]'.</msg>
+<arg>${sbL3PicklistValue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:27.661576" elapsed="0.079009"/>
+</kw>
+<status status="PASS" start="2024-02-13T11:16:27.553188" elapsed="0.187397"/>
+</kw>
+<kw name="Scroll Element Into View" owner="Selenium2Library">
+<arg>xpath=//input[@name='country']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-02-13T11:16:27.740585" elapsed="0.308702"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-13T11:16:33.050674" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-13T11:16:28.049287" elapsed="5.001387"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>xpath=//input[@name='country']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-13T11:16:33.050674" elapsed="0.026180"/>
+</kw>
+<kw name="Click on the Country Code" owner="LeadCreationKeywords">
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:33.090030" level="INFO">Clicking element 'xpath://input[@name='country']'.</msg>
+<arg>${countryCode}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:33.076854" elapsed="0.207060"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-13T11:16:38.299265" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-13T11:16:33.283914" elapsed="5.015351"/>
+</kw>
+<kw name="Click Element" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:38.299265" level="INFO">Clicking element 'xpath://span[@class='slds-truncate']/self::span[contains(text(),'Afghanistan')]'.</msg>
+<arg>${countryCodePicklist}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:38.299265" elapsed="0.083210"/>
+</kw>
+<status status="PASS" start="2024-02-13T11:16:33.076854" elapsed="5.305621"/>
+</kw>
+<kw name="Enter the City" owner="LeadCreationKeywords">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:38.384500" level="INFO">Typing text 'Hosur' into text field 'xpath://input[@name='city']'.</msg>
+<arg>${cityInput}</arg>
+<arg>${city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:38.383498" elapsed="0.151622"/>
+</kw>
+<arg>${city}</arg>
+<status status="PASS" start="2024-02-13T11:16:38.382475" elapsed="0.152645"/>
+</kw>
+<kw name="Enter the PostalCode" owner="LeadCreationKeywords">
+<kw name="Input Text" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:38.535120" level="INFO">Typing text '634332' into text field 'xpath://input[@name='postalCode']'.</msg>
+<arg>${postalCodeInput}</arg>
+<arg>${postal}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:38.535120" elapsed="0.157647"/>
+</kw>
+<arg>${postal}</arg>
+<status status="PASS" start="2024-02-13T11:16:38.535120" elapsed="0.157647"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-13T11:16:43.702850" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-13T11:16:38.692767" elapsed="5.010083"/>
+</kw>
+<kw name="Get WebElement" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:43.718547" level="INFO">${element} = &lt;selenium.webdriver.remote.webelement.WebElement (session="94c0ad66d3f599d6b1c3453f4ccfcf8f", element="DC36D9B0AC28EAF82291FAE3B1D2A638_element_309")&gt;</msg>
+<var>${element}</var>
+<arg>xpath=//button[contains(text(),'Save')]/self::button[@class='slds-button slds-button_brand']</arg>
+<doc>Returns the first WebElement matching the given ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:16:43.702850" elapsed="0.015697"/>
+</kw>
+<kw name="Execute Javascript" owner="Selenium2Library">
+<msg time="2024-02-13T11:16:43.718547" level="INFO">Executing JavaScript:
+arguments[0].click();
+By using argument:
+'&lt;selenium.webdriver.remote.webelement.WebElement (session="94c0ad66d3f599d6b1c3453f4ccfcf8f", element="DC36D9B0AC28EAF82291FAE3B1D2A638_element_309")&gt;'</msg>
+<arg>arguments[0].click();</arg>
+<arg>ARGUMENTS</arg>
+<arg>${element}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="PASS" start="2024-02-13T11:16:43.718547" elapsed="0.029654"/>
+</kw>
+<kw name="Click on the DC Convert button" owner="LeadCreationKeywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-13T11:16:48.763072" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-13T11:16:43.749448" elapsed="5.013624"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${dcConvertButton}</arg>
+<arg>20s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-13T11:16:48.763072" elapsed="12.319321"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2024-02-13T11:17:01.082393" level="INFO">Clicking button 'xpath://button[@class='slds-button slds-button_neutral']/self::button[contains(text(),'DC Convert')]'.</msg>
+<arg>${dcConvertButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:17:01.082393" elapsed="0.087074"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-13T11:17:11.183567" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-13T11:17:01.170528" elapsed="10.013039"/>
+</kw>
+<status status="PASS" start="2024-02-13T11:16:43.749448" elapsed="27.434119"/>
+</kw>
+<kw name="Switch Window" owner="Selenium2Library">
+<arg>title=Convert - Duplicate Check for Salesforce | Salesforce</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:17:11.183567" elapsed="0.030153"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-13T11:17:16.227316" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-13T11:17:11.213720" elapsed="5.013596"/>
+</kw>
+<kw name="Select Frame" owner="Selenium2Library">
+<msg time="2024-02-13T11:17:16.227316" level="INFO">Selecting frame 'xpath=//iframe[@title='Convert - Duplicate Check for Salesforce']'.</msg>
+<arg>xpath=//iframe[@title='Convert - Duplicate Check for Salesforce']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-02-13T11:17:16.227316" elapsed="0.015864"/>
+</kw>
+<kw name="Click on the Convert button" owner="LeadCreationKeywords">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-02-13T11:17:21.252812" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-02-13T11:17:16.243180" elapsed="5.009632"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="Selenium2Library">
+<arg>${convertButton}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-02-13T11:17:21.252812" elapsed="0.016060"/>
+</kw>
+<kw name="Click Button" owner="Selenium2Library">
+<msg time="2024-02-13T11:17:21.281548" level="INFO">Clicking button 'xpath://section[@class='slds-modal slds-fade-in-open']/descendant::button[@title='Convert']'.</msg>
+<arg>${convertButton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-13T11:17:21.268872" elapsed="0.185898"/>
+</kw>
+<status status="PASS" start="2024-02-13T11:17:16.243180" elapsed="5.211590"/>
+</kw>
+<status status="PASS" start="2024-02-13T11:15:54.193152" elapsed="87.261618"/>
+</test>
+<status status="PASS" start="2024-02-13T11:15:53.861816" elapsed="87.596128"/>
+</suite>
+<status status="PASS" start="2024-02-13T11:15:53.840941" elapsed="87.618010"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="CreateAccountandContact">Suites.CreateAccountandContact</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

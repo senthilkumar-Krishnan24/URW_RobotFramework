@@ -20,6 +20,7 @@ ${postal}       634332
 Click on the New Button
     Click Button    ${newButton}
 
+
 Initialize Random Data Last Name
      ${lastName}=   Generate Random String  12  [LETTERS]
      Set Global Variable    ${lastName}
